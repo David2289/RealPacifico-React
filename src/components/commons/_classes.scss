@@ -1,0 +1,50 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* For center align use valign-wrapper class of materialize */
+.content_center_vertical {
+    position: relative;
+
+    p {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+    }
+
+    div {
+        margin: 0;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+}
+
+.content_center_horizontal {
+    position: relative;
+
+    p {
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        -ms-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+    }
+}
+
+.content_center {
+    position: relative;
+
+    p {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}

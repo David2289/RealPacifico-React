@@ -1,0 +1,51 @@
+@import '../commons/_variables.scss';
+@import '../commons/_classes.scss';
+
+$navbar_height: 70px;
+
+/// "s" size ///
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+    .navbar_bg {
+        padding: 0 0px;
+        background-color: $primary_color;
+    }
+}
+
+/// "m" size ///
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    .navbar_bg {
+        padding: 0 10px;
+        background-color: $primary_color;
+    }
+}
+
+/// "l" size ///
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .navbar_bg {
+        padding: 0 100px;
+        background-color: $primary_color;
+    }
+}
+
+/// "xl" size ///
+@media only screen and (min-width: 1200px) {
+    .navbar_bg {
+        padding: 0 100px;
+        background-color: $primary_color;
+    }
+}
+
+.navbar_logo {
+    height: 40px;
+    top: 10px;
+    position: relative;
+}
+
+.navbar_burger {
+    width: 20px;
+    position: relative;
+}
+
+.navitem_bg {
+    color: $secondary_color;
+}

@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* For center align use valign-wrapper class of materialize */
+.content_center_vertical {
+  position: relative;
+}
+.content_center_vertical p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.content_center_vertical div {
+  margin: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.content_center_horizontal {
+  position: relative;
+}
+.content_center_horizontal p {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+.content_center {
+  position: relative;
+}
+.content_center p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+  .navbar_bg {
+    padding: 0 0px;
+    background-color: #FFCA18;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .navbar_bg {
+    padding: 0 10px;
+    background-color: #FFCA18;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .navbar_bg {
+    padding: 0 100px;
+    background-color: #FFCA18;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .navbar_bg {
+    padding: 0 100px;
+    background-color: #FFCA18;
+  }
+}
+.navbar_logo {
+  height: 40px;
+  top: 10px;
+  position: relative;
+}
+
+.navbar_burger {
+  width: 20px;
+  position: relative;
+}
+
+.navitem_bg {
+  color: #101439;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* For center align use valign-wrapper class of materialize */
+.content_center_vertical {
+  position: relative;
+}
+.content_center_vertical p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.content_center_vertical div {
+  margin: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.content_center_horizontal {
+  position: relative;
+}
+.content_center_horizontal p {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+.content_center {
+  position: relative;
+}
+.content_center p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.bg_1 {
+  height: 300px;
+  background-color: #101439;
+}
+
+.bg_3 {
+  height: 200px;
+  background-color: #FFCA18;
+}
+
+.bg_2 {
+  background-color: #101439;
+}
+
+/*# sourceMappingURL=/src.78399e21.css.map */

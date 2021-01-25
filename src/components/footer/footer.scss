@@ -1,0 +1,16 @@
+@import '../commons/_variables.scss';
+@import '../commons/_classes.scss';
+
+.bg_1 {
+    height: 300px;
+    background-color: $secondary_color;
+}
+
+.bg_3 {
+    height: 200px;
+    background-color: $primary_color;
+}
+
+.bg_2 {
+    background-color: $secondary_color;
+}
