@@ -47,5 +47,5 @@ $navbar_height: 70px;
 }
 
 .navitem_bg {
-    color: $secondary_color;
+    @extend %font_regular_subtitle_black;
 }

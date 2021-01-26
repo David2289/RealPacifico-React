@@ -12,18 +12,18 @@
     // To make the overlay: //
     position: relative;
     z-index: 1;
-}
 
-.footer::after {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background: $secondary_color;
-    opacity: 0.6;
+    &::after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background: $secondary_color;
+        opacity: 0.6;
+    }
 }
 
 .logo_content {
@@ -43,7 +43,7 @@
         float: left;
     }
     p {
-        color: white;
+        @extend %font_regular_subtitle_white;
     }
 }
 

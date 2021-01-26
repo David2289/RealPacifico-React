@@ -4,6 +4,410 @@
     padding: 0;
 }
 
+body {
+    @extend %font_regular;
+}
+
+
+/*#region ****** FONTS ****** */
+
+@font-face {
+    font-family: 'sailecbold';
+    src: url('../../fonts/sailec-bold-webfont.woff2') format('woff2'),
+         url('../../fonts/sailec-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'saileclight';
+    src: url('../../fonts/sailec-light-webfont.woff2') format('woff2'),
+         url('../../fonts/sailec-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sailecmedium';
+    src: url('../../fonts/sailec-medium-webfont.woff2') format('woff2'),
+         url('../../fonts/sailec-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sailecregular';
+    src: url('../../fonts/sailec-regular-webfont.woff2') format('woff2'),
+         url('../../fonts/sailec-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+%font {
+
+}
+
+%font_regular {
+    @extend %font;
+    font-family: 'sailecregular';
+}
+
+%font_medium {
+    @extend %font;
+    font-family: 'sailecmedium';
+}
+
+%font_bold {
+    @extend %font;
+    font-family: 'sailecbold';
+}
+
+%font_light {
+    @extend %font;
+    font-family: 'saileclight';
+}
+
+/*#region ****** FONT REGULAR ****** */
+
+/*#region FONT REGULAR TITLE */
+
+%font_regular_title {
+    @extend %font_regular;
+    font-size: $font_size_title;
+}
+
+%font_regular_title_black {
+    @extend %font_regular_title;
+    color: $secondary_color;
+}
+
+%font_regular_title_white {
+    @extend %font_regular_title;
+    color: white;
+}
+
+/*#endregion*/
+
+
+/*#region FONT REGULAR SUBTITLE */
+
+%font_regular_subtitle {
+    @extend %font_regular;
+    font-size: $font_size_subtitle;
+}
+
+%font_regular_subtitle_black {
+    @extend %font_regular_subtitle;
+    color: black;
+}
+
+%font_regular_subtitle_white {
+    @extend %font_regular_subtitle;
+    color: white;
+}
+
+/*#endregion*/
+
+
+/*#region FONT REGULAR BODY */
+
+%font_regular_body {
+    @extend %font_regular;
+    font-size: $font_size_body;
+}
+
+%font_regular_body_black {
+    @extend %font_regular_body;
+    color: black;
+}
+
+%font_regular_body_white {
+    @extend %font_regular_body;
+    color: white;
+}
+
+/*#endregion*/
+
+
+/*#region FONT REGULAR FOOTER */
+
+%font_regular_footer {
+    @extend %font_regular;
+    font-size: $font_size_footer;
+}
+
+%font_regular_footer_black {
+    @extend %font_regular_footer;
+    color: black;
+}
+
+%font_regular_footer_white {
+    @extend %font_regular_footer;
+    color: white;
+}
+
+/*#endregion*/
+
+/*#endregion*/
+
+
+
+/*#region ****** FONT MEDIUM ****** */
+
+/*#region FONT MEDIUM TITLE */
+
+%font_medium_title {
+    @extend %font_medium;
+    font-size: $font_size_title;
+}
+
+%font_medium_title_black {
+    @extend %font_medium_title;
+    color: $secondary_color;
+}
+
+%font_medium_title_white {
+    @extend %font_medium_title;
+    color: white;
+}
+
+/*#endregion*/
+
+
+/*#region FONT MEDIUM SUBTITLE */
+
+%font_medium_subtitle {
+    @extend %font_medium;
+    font-size: $font_size_subtitle;
+}
+
+%font_medium_subtitle_black {
+    @extend %font_medium_subtitle;
+    color: $secondary_color;
+}
+
+%font_medium_subtitle_white {
+    @extend %font_medium_subtitle;
+    color: white;
+}
+
+/*#endregion*/
+
+
+/*#region FONT MEDIUM BODY */
+
+%font_medium_body {
+    @extend %font_medium;
+    font-size: $font_size_body;
+}
+
+%font_medium_body_black {
+    @extend %font_medium_body;
+    color: $secondary_color;
+}
+
+%font_medium_body_white {
+    @extend %font_medium_body;
+    color: white;
+}
+
+/*#endregion*/
+
+
+/*#region FONT MEDIUM FOOTER */
+
+%font_medium_footer {
+    @extend %font_medium;
+    font-size: $font_size_footer;
+}
+
+%font_medium_footer_black {
+    @extend %font_medium_footer;
+    color: $secondary_color;
+}
+
+%font_medium_footer_white {
+    @extend %font_medium_footer;
+    color: white;
+}
+
+/*#endregion*/
+
+/*#endregion*/
+
+
+
+/*#region ****** FONT BOLD ****** */
+
+/*#region FONT BOLD TITLE */
+
+%font_bold_title {
+    @extend %font_bold;
+    font-size: $font_size_title;
+}
+
+%font_bold_title_black {
+    @extend %font_bold_title;
+    color: $secondary_color;
+}
+
+%font_bold_title_white {
+    @extend %font_bold_title;
+    color: white;
+}
+
+/*#endregion*/
+
+
+/*#region FONT BOLD SUBTITLE */
+
+%font_bold_subtitle {
+    @extend %font_bold;
+    font-size: $font_size_subtitle;
+}
+
+%font_bold_subtitle_black {
+    @extend %font_bold_subtitle;
+    color: $secondary_color;
+}
+
+%font_bold_subtitle_white {
+    @extend %font_bold_subtitle;
+    color: white;
+}
+
+/*#endregion*/
+
+
+/*#region FONT BOLD BODY */
+
+%font_bold_body {
+    @extend %font_bold;
+    font-size: $font_size_body;
+}
+
+%font_bold_body_black {
+    @extend %font_bold_body;
+    color: black;
+}
+
+%font_bold_body_white {
+    @extend %font_bold_body;
+    color: white;
+}
+
+/*#endregion*/
+
+
+/*#region FONT BOLD FOOTER */
+
+%font_bold_footer {
+    @extend %font_bold;
+    font-size: $font_size_footer;
+}
+
+%font_bold_footer_black {
+    @extend %font_bold_footer;
+    color: black;
+}
+
+%font_bold_footer_white {
+    @extend %font_bold_footer;
+    color: white;
+}
+
+/*#endregion*/
+
+/*#endregion*/
+
+
+
+/*#region ****** FONT LIGHT ****** */
+
+/*#region FONT LIGHT TITLE */
+
+%font_light_title {
+    @extend %font_light;
+    font-size: $font_size_title;
+}
+
+%font_light_title_black {
+    @extend %font_light_title;
+    color: $secondary_color;
+}
+
+%font_light_title_white {
+    @extend %font_light_title;
+    color: white;
+}
+
+/*#endregion*/
+
+
+/*#region FONT LIGHT SUBTITLE */
+
+%font_light_subtitle {
+    @extend %font_light;
+    font-size: $font_size_subtitle;
+}
+
+%font_light_subtitle_black {
+    @extend %font_light_subtitle;
+    color: $secondary_color;
+}
+
+%font_light_subtitle_white {
+    @extend %font_light_subtitle;
+    color: white;
+}
+
+/*#endregion*/
+
+
+/*#region FONT LIGHT BODY */
+
+%font_light_body {
+    @extend %font_light;
+    font-size: $font_size_body;
+}
+
+%font_light_body_black {
+    @extend %font_light_body;
+    color: black;
+}
+
+%font_light_body_white {
+    @extend %font_light_body;
+    color: white;
+}
+
+/*#endregion*/
+
+
+/*#region FONT LIGHT FOOTER */
+
+%font_light_footer {
+    @extend %font_light;
+    font-size: $font_size_footer;
+}
+
+%font_light_footer_black {
+    @extend %font_light_footer;
+    color: black;
+}
+
+%font_light_footer_white {
+    @extend %font_light_footer;
+    color: white;
+}
+
+/*#endregion*/
+
+/*#endregion*/
+
+
+/*#endregion*/
+
+
+
+
 .list_separation_10 {
     li {
         margin-bottom: 10px;
@@ -21,5 +425,3 @@
         margin-bottom: 20px;
     }
 }
-
-/* For center align use valign-wrapper class of materialize */
