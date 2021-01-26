@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
+import Header from './components/header/header.jsx';
+import Feet from './components/footer/footer.jsx';
 
 ReactDOM.render(
     <Header></Header>, 
@@ -9,6 +9,6 @@ ReactDOM.render(
 );
 
 ReactDOM.render(
-    <Footer></Footer>, 
-    document.getElementById("footer")
+    <Feet></Feet>, 
+    document.getElementById("feet")
 );
