@@ -1,0 +1,80 @@
+@import '../commons/_variables.scss';
+@import '../commons/_classes.scss';
+
+#slider_content {
+    height: 600px;
+    width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.slide_content {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    
+    // Cover and center background image: //
+    background-position: 50% 50%; /*El cuadro ajustado se puede centrar horizontal y verticalmente*/
+    background-size: cover; /*El cuadro de la imagen se ajusta a la dimensión más pequeña del div con el objetivo de cubrirla*/
+    background-repeat: no-repeat;
+
+    // To make the overlay: //
+    position: absolute;
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background: $secondary_color;
+        opacity: 0.6;
+    }
+}
+
+.bubble_content {
+    height:50px;
+    width: 120px;
+    margin:0 auto;
+    position:relative;
+    top:550px;
+    bottom: 0;
+    z-index: 40;
+
+    div {
+        display:block;
+        height:20px;
+        width:40px;
+        float:left;
+        position:relative;
+    }
+}
+
+%bubble {
+    position:absolute;
+	display:block;
+	height:12px;
+	width:12px;
+	border-radius:50%;
+	float:left;
+	margin:0px 14px;
+}
+.bubble_under {
+	@extend %bubble;
+    border: 1px solid $primary_color_clear;
+    
+    &:hover {
+        cursor:pointer;
+	    background: $primary_color_clear;
+    }
+}
+.bubble_over {
+	@extend %bubble;
+	background: $primary_color;
+	opacity:0;
+    visibility:hidden;
+}

@@ -14,9 +14,9 @@ const Slide = (props) => {
 }
 
 Slide.propTypes = {
-    bg_path: PropTypes.string,
-    title: PropTypes.string,
-    description: PropTypes.string
+    bg_path: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired
 }
 
 export default Slide;
