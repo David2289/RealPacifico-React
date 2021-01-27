@@ -1,0 +1,54 @@
+@import '../commons/_variables.scss';
+@import '../commons/_classes.scss';
+
+.slider_content {
+    height: 600px;
+	position: relative;
+	overflow: hidden;
+}
+
+.slide_content {
+    height: 400px;
+    width: 100%;
+    
+    // Cover and center background image: //
+    background-position: 50% 50%; /*El cuadro ajustado se puede centrar horizontal y verticalmente*/
+    background-size: cover; /*El cuadro de la imagen se ajusta a la dimensión más pequeña del div con el objetivo de cubrirla*/
+    background-repeat: no-repeat;
+
+    // To make the overlay: //
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background: $secondary_color;
+        opacity: 0.6;
+    }
+}
+
+.slide_title {
+    @extend %font_medium_title_white;
+    width: 60%;
+    position:absolute;
+    font-family: 'instant_harmony_regular';
+    font-size: 55px;
+    top:15%;
+	left: 7%;
+}
+
+.slide_description {
+    @extend %font_medium_title_white;
+    width: 60%;
+    position: absolute;
+    font-family: 'instant_harmony_lite';
+    font-size: 35px;
+    top: 45%;
+	right: 10%;
+}

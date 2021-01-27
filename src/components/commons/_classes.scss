@@ -40,6 +40,25 @@ body {
     font-style: normal;
 }
 
+
+
+@font-face {
+    font-family: 'instant_harmony_lite';
+    src: url('../../fonts/instantharmonydemo_lite-webfont.woff2') format('woff2'),
+         url('../../fonts/instantharmonydemo_lite-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'instant_harmony_regular';
+    src: url('../../fonts/instantharmonydemo-webfont.woff2') format('woff2'),
+         url('../../fonts/instantharmonydemo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 %font {
 
 }
