@@ -16,23 +16,23 @@ const Header = () => (
     brand={logo_dom}
     menuIcon={burger_dom}>
 
-        <NavItem className='navitem_bg'>
+        <NavItem className='navitem'>
             Inicio
         </NavItem>
 
-        <NavItem className='navitem_bg'>
+        <NavItem className='navitem'>
             Matrícula 2021
         </NavItem>
 
-        <NavItem className='navitem_bg'>
+        <NavItem className='navitem'>
             Nosotros
         </NavItem>
 
-        <NavItem className='navitem_bg'>
+        <NavItem className='navitem'>
             Nuestra Propuesta
         </NavItem>
 
-        <NavItem className='navitem_bg'>
+        <NavItem className='navitem'>
             Contáctanos
         </NavItem>
 

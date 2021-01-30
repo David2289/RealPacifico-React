@@ -46,6 +46,6 @@ $navbar_height: 70px;
     position: relative;
 }
 
-.navitem_bg {
-    @extend %font_regular_subtitle_black;
+.navitem {
+    @extend %font_medium_body_black;
 }
