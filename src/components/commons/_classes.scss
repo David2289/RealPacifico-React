@@ -65,6 +65,7 @@ body {
 }
 
 %font {
+    /**/
 }
 
 %font_regular {
@@ -605,9 +606,3 @@ body {
     }
 }
 
-.title_line {
-    width: 90px;
-    height: 4px;
-    background-color: $primary_color;
-    @extend .margin_10_0;
-}

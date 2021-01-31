@@ -1,6 +1,8 @@
 import React from 'react';
 import {Container, Row, Col, Parallax} from 'react-materialize';
+import { COLOR } from '../commons/base.js';
 import Slider from '../slider/slider.jsx'
+import TitleSect from '../titlesect/titlesect.jsx';
 import './bodyindex.scss'
 
 const path_classroom_img = require('../../images/img_6.jpg');
@@ -31,8 +33,7 @@ const BodyIndex = () => {
                     </Col>
                     <Col s={12} m={6}>
                         <div>
-                            <p className='font_bold_title_black'>Nosotros</p>
-                            <div className='title_line'></div>
+                            <TitleSect title='Nosotros'></TitleSect>
                             <p className='margin_30_0'>
                                 El colegio Real Pacífico, con alto nivel de enseñanza y altas expectativas de rendimiento académico. Nuestros alumnos egresan preparados para aprobar el examen e ingresar a la universidad.
                             </p>
@@ -47,6 +48,9 @@ const BodyIndex = () => {
                 options={{responsiveThreshold: 0}}
                 children={
                     <Container className='section_ourproposal_content'>
+                        <Row>
+                            <TitleSect title='Nuestra Propuesta' color={COLOR.white}></TitleSect>
+                        </Row>
                         <Row>
                             <Col s={12} m={6} l={3} xl={3}>
                                 <img src={path_ic_initial}/>

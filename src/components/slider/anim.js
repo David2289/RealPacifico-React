@@ -2,7 +2,7 @@ import jQuery from 'jquery';
 import gsap from 'gsap';
 
 
-jQuery(function($){
+jQuery(function($) {
 
     const duration_slide = 8; // duration in secs
     const duration_trans = 0.5; // duration in secs
