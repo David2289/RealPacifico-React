@@ -3,6 +3,7 @@ import {Container, Row, Col, Parallax} from 'react-materialize';
 import { COLOR } from '../commons/base.js';
 import Slider from '../slider/slider.jsx'
 import TitleSect from '../titlesect/titlesect.jsx';
+import IconTexts from '../icontexts/icontexts.jsx';
 import './bodyindex.scss'
 
 const path_classroom_img = require('../../images/img_6.jpg');
@@ -53,16 +54,36 @@ const BodyIndex = () => {
                         </Row>
                         <Row>
                             <Col s={12} m={6} l={3} xl={3}>
-                                <img src={path_ic_initial}/>
+                                <IconTexts 
+                                ic_path={path_ic_initial} 
+                                desc='Inicial' 
+                                color={COLOR.white} 
+                                centered={true}>
+                                </IconTexts>
                             </Col>
                             <Col s={12} m={6} l={3} xl={3}>
-                                <img src={path_ic_primary}/>
+                                <IconTexts 
+                                ic_path={path_ic_primary} 
+                                desc='Primaria' 
+                                color={COLOR.white} 
+                                centered={true}>
+                                </IconTexts>
                             </Col>
                             <Col s={12} m={6} l={3} xl={3}>
-                                <img src={path_ic_highschool}/>
+                                <IconTexts 
+                                ic_path={path_ic_highschool} 
+                                desc='Secundaria' 
+                                color={COLOR.white} 
+                                centered={true}>
+                                </IconTexts>
                             </Col>
                             <Col s={12} m={6} l={3} xl={3}>
-                                <img src={path_ic_system5}/>
+                                <IconTexts 
+                                ic_path={path_ic_system5} 
+                                desc='Sistema 5º año' 
+                                color={COLOR.white} 
+                                centered={true}>
+                                </IconTexts>
                             </Col>
                         </Row>
                     </Container>

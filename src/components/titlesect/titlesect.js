@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import { COLOR, SIZE } from '../commons/base.js'
+import { COLOR, SIZE, LabelBoldTitleBlack } from '../commons/base.js'
 
-const TitleLabel = styled.p`
-    font-family: 'sailecbold';
+const TitleLabel = styled(LabelBoldTitleBlack)`
     font-size: ${props => props.theme.size};
     color: ${props => props.theme.color};
 `;
