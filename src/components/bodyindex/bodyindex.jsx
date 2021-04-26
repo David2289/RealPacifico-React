@@ -1,9 +1,10 @@
 import React from 'react';
-import {Container, Row, Col, Parallax} from 'react-materialize';
-import { COLOR } from '../commons/base.js';
+import { Container, Row, Col, Parallax } from 'react-materialize';
+import { COLOR } from '../commons/constants.js';
 import Slider from '../slider/slider.jsx'
 import TitleSect from '../titlesect/titlesect.jsx';
 import IconTexts from '../icontexts/icontexts.jsx';
+import { SectOurProposal } from '../bodyindex/bodyindex.js';
 import './bodyindex.scss'
 
 const path_classroom_img = require('../../images/img_6.jpg');
@@ -34,7 +35,7 @@ const BodyIndex = () => {
                     </Col>
                     <Col s={12} m={6}>
                         <div>
-                            <TitleSect title='Nosotros'></TitleSect>
+                            <TitleSect>Nosotros</TitleSect>
                             <p className='margin_30_0'>
                                 El colegio Real Pacífico, con alto nivel de enseñanza y altas expectativas de rendimiento académico. Nuestros alumnos egresan preparados para aprobar el examen e ingresar a la universidad.
                             </p>
@@ -44,13 +45,13 @@ const BodyIndex = () => {
             </Container>
 
             <Parallax
-                className='section_ourproposal_bg'
+                className='parallax_bg'
                 image={<img alt="" src={path_img_13}/>}
                 options={{responsiveThreshold: 0}}
                 children={
-                    <Container className='section_ourproposal_content'>
+                    <Container className='parallax_content'>
                         <Row>
-                            <TitleSect title='Nuestra Propuesta' color={COLOR.white}></TitleSect>
+                            <TitleSect color={COLOR.white}>Nuestra Propuesta</TitleSect>
                         </Row>
                         <Row>
                             <Col s={12} m={6} l={3} xl={3}>

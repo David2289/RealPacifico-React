@@ -1,21 +1,6 @@
 import styled from 'styled-components';
+import { COLOR, SIZE } from './constants.js';
 
-const COLOR = {
-    primary: '#FFCA18',
-    primaryDark: '#C99B02',
-    primaryClear: '#FFEEB5',
-    secondary: ' #101439',
-    secondaryClear: ' #7278A8',
-    background: '#FFFFF6',
-    white: '#FFFFFF'
-}
-
-const SIZE = {
-    fontTitle: '36px',
-    fontSubtitle: '26px',
-    fontBody: '16px',
-    fontFooter: '11px'
-}
 
 const LabelRegular = styled.p`
     font-family: 'sailecregular'
@@ -38,7 +23,19 @@ const LabelLight = styled.p`
 // #region *** LABEL REGULAR TITLE ***
 
 const LabelRegularTitle = styled(LabelRegular)`
-    font-size: ${SIZE.fontTitle};
+    font-size: ${SIZE.title};
+`;
+
+const LabelRegularTitlePrimary = styled(LabelRegularTitle)`
+    color: ${COLOR.primary};
+`;
+
+const LabelRegularTitlePrimaryDark = styled(LabelRegularTitle)`
+    color: ${COLOR.primaryDark};
+`;
+
+const LabelRegularTitleSecondary = styled(LabelRegularTitle)`
+    color: ${COLOR.secondary};
 `;
 
 const LabelRegularTitleWhite = styled(LabelRegularTitle)`
@@ -46,11 +43,11 @@ const LabelRegularTitleWhite = styled(LabelRegularTitle)`
 `;
 
 const LabelRegularTitleBlack = styled(LabelRegularTitle)`
-    color: ${COLOR.secondary};
+    color: ${COLOR.black};
 `;
 
-const LabelRegularTitleGold = styled(LabelRegularTitle)`
-    color: ${COLOR.primaryDark};
+const LabelRegularTitleGray = styled(LabelRegularTitle)`
+    color: ${COLOR.gray};
 `;
 
 // #endregion
@@ -58,7 +55,19 @@ const LabelRegularTitleGold = styled(LabelRegularTitle)`
 // #region *** LABEL REGULAR SUBTITLE ***
 
 const LabelRegularSubtitle = styled(LabelRegular)`
-    font-size: ${SIZE.fontSubtitle};
+    font-size: ${SIZE.subtitle};
+`;
+
+const LabelRegularSubtitlePrimary = styled(LabelRegularSubtitle)`
+    color: ${COLOR.primary};
+`;
+
+const LabelRegularSubtitlePrimaryDark = styled(LabelRegularSubtitle)`
+    color: ${COLOR.primaryDark};
+`;
+
+const LabelRegularSubtitleSecondary = styled(LabelRegularSubtitle)`
+    color: ${COLOR.secondary};
 `;
 
 const LabelRegularSubtitleWhite = styled(LabelRegularSubtitle)`
@@ -66,11 +75,11 @@ const LabelRegularSubtitleWhite = styled(LabelRegularSubtitle)`
 `;
 
 const LabelRegularSubtitleBlack = styled(LabelRegularSubtitle)`
-    color: ${COLOR.secondary};
+    color: ${COLOR.black};
 `;
 
-const LabelRegularSubtitleGold = styled(LabelRegularSubtitle)`
-    color: ${COLOR.primaryDark};
+const LabelRegularSubtitleGray = styled(LabelRegularSubtitle)`
+    color: ${COLOR.gray};
 `;
 
 // #endregion
@@ -78,7 +87,19 @@ const LabelRegularSubtitleGold = styled(LabelRegularSubtitle)`
 // #region *** LABEL REGULAR BODY ***
 
 const LabelRegularBody = styled(LabelRegular)`
-    font-size: ${SIZE.fontBody};
+    font-size: ${SIZE.body};
+`;
+
+const LabelRegularBodyPrimary = styled(LabelRegularBody)`
+    color: ${COLOR.primary};
+`;
+
+const LabelRegularBodyPrimaryDark = styled(LabelRegularBody)`
+    color: ${COLOR.primaryDark};
+`;
+
+const LabelRegularBodySecondary = styled(LabelRegularBody)`
+    color: ${COLOR.secondary};
 `;
 
 const LabelRegularBodyWhite = styled(LabelRegularBody)`
@@ -86,11 +107,11 @@ const LabelRegularBodyWhite = styled(LabelRegularBody)`
 `;
 
 const LabelRegularBodyBlack = styled(LabelRegularBody)`
-    color: ${COLOR.secondary};
+    color: ${COLOR.black};
 `;
 
-const LabelRegularBodyGold = styled(LabelRegularBody)`
-    color: ${COLOR.primaryDark};
+const LabelRegularBodyGray = styled(LabelRegularBody)`
+    color: ${COLOR.gray};
 `;
 
 // #endregion
@@ -98,7 +119,7 @@ const LabelRegularBodyGold = styled(LabelRegularBody)`
 // #region *** LABEL REGULAR FOOTER ***
 
 const LabelRegularFooter = styled(LabelRegular)`
-    font-size: ${SIZE.fontFooter};
+    font-size: ${SIZE.caption};
 `;
 
 const LabelRegularFooterWhite = styled(LabelRegularFooter)`
@@ -106,7 +127,7 @@ const LabelRegularFooterWhite = styled(LabelRegularFooter)`
 `;
 
 const LabelRegularFooterBlack = styled(LabelRegularFooter)`
-    color: ${COLOR.secondary};
+    color: ${COLOR.black};
 `;
 
 const LabelRegularFooterGold = styled(LabelRegularFooter)`
@@ -121,7 +142,7 @@ const LabelRegularFooterGold = styled(LabelRegularFooter)`
 // #region *** LABEL BOLD TITLE ***
 
 const LabelBoldTitle = styled(LabelBold)`
-    font-size: ${SIZE.fontTitle};
+    font-size: ${SIZE.title};
 `;
 
 const LabelBoldTitleWhite = styled(LabelBoldTitle)`
@@ -129,7 +150,7 @@ const LabelBoldTitleWhite = styled(LabelBoldTitle)`
 `;
 
 const LabelBoldTitleBlack = styled(LabelBoldTitle)`
-    color: ${COLOR.secondary};
+    color: ${COLOR.black};
 `;
 
 const LabelBoldTitleGold = styled(LabelBoldTitle)`
@@ -141,7 +162,7 @@ const LabelBoldTitleGold = styled(LabelBoldTitle)`
 // #region *** LABEL BOLD SUBTITLE ***
 
 const LabelBoldSubtitle = styled(LabelBold)`
-    font-size: ${SIZE.fontSubtitle};
+    font-size: ${SIZE.subtitle};
 `;
 
 const LabelBoldSubtitleWhite = styled(LabelBoldSubtitle)`
@@ -149,7 +170,7 @@ const LabelBoldSubtitleWhite = styled(LabelBoldSubtitle)`
 `;
 
 const LabelBoldSubtitleBlack = styled(LabelBoldSubtitle)`
-    color: ${COLOR.secondary};
+    color: ${COLOR.black};
 `;
 
 const LabelBoldSubtitleGold = styled(LabelBoldSubtitle)`
@@ -161,7 +182,7 @@ const LabelBoldSubtitleGold = styled(LabelBoldSubtitle)`
 // #region *** LABEL BOLD BODY ***
 
 const LabelBoldBody = styled(LabelBold)`
-    font-size: ${SIZE.fontBody};
+    font-size: ${SIZE.body};
 `;
 
 const LabelBoldBodyWhite = styled(LabelBoldBody)`
@@ -169,7 +190,7 @@ const LabelBoldBodyWhite = styled(LabelBoldBody)`
 `;
 
 const LabelBoldBodyBlack = styled(LabelBoldBody)`
-    color: ${COLOR.secondary};
+    color: ${COLOR.black};
 `;
 
 const LabelBoldBodyGold = styled(LabelBoldBody)`
@@ -181,7 +202,7 @@ const LabelBoldBodyGold = styled(LabelBoldBody)`
 // #region *** LABEL BOLD FOOTER ***
 
 const LabelBoldFooter = styled(LabelBold)`
-    font-size: ${SIZE.fontFooter};
+    font-size: ${SIZE.caption};
 `;
 
 const LabelBoldFooterWhite = styled(LabelBoldFooter)`
@@ -189,7 +210,7 @@ const LabelBoldFooterWhite = styled(LabelBoldFooter)`
 `;
 
 const LabelBoldFooterBlack = styled(LabelBoldFooter)`
-    color: ${COLOR.secondary};
+    color: ${COLOR.black};
 `;
 
 const LabelBoldFooterGold = styled(LabelBoldFooter)`
@@ -204,7 +225,7 @@ const LabelBoldFooterGold = styled(LabelBoldFooter)`
 // #region *** LABEL MEDIUM TITLE ***
 
 const LabelMediumTitle = styled(LabelMedium)`
-    font-size: ${SIZE.fontTitle};
+    font-size: ${SIZE.title};
 `;
 
 const LabelMediumTitleWhite = styled(LabelMediumTitle)`
@@ -212,7 +233,7 @@ const LabelMediumTitleWhite = styled(LabelMediumTitle)`
 `;
 
 const LabelMediumTitleBlack = styled(LabelMediumTitle)`
-    color: ${COLOR.secondary};
+    color: ${COLOR.black};
 `;
 
 const LabelMediumTitleGold = styled(LabelMediumTitle)`
@@ -224,7 +245,7 @@ const LabelMediumTitleGold = styled(LabelMediumTitle)`
 // #region *** LABEL MEDIUM SUBTITLE ***
 
 const LabelMediumSubtitle = styled(LabelMedium)`
-    font-size: ${SIZE.fontSubtitle};
+    font-size: ${SIZE.subtitle};
 `;
 
 const LabelMediumSubtitleWhite = styled(LabelMediumSubtitle)`
@@ -232,7 +253,7 @@ const LabelMediumSubtitleWhite = styled(LabelMediumSubtitle)`
 `;
 
 const LabelMediumSubtitleBlack = styled(LabelMediumSubtitle)`
-    color: ${COLOR.secondary};
+    color: ${COLOR.black};
 `;
 
 const LabelMediumSubtitleGold = styled(LabelMediumSubtitle)`
@@ -244,7 +265,7 @@ const LabelMediumSubtitleGold = styled(LabelMediumSubtitle)`
 // #region *** LABEL MEDIUM BODY ***
 
 const LabelMediumBody = styled(LabelMedium)`
-    font-size: ${SIZE.fontBody};
+    font-size: ${SIZE.body};
 `;
 
 const LabelMediumBodyWhite = styled(LabelMediumBody)`
@@ -252,7 +273,7 @@ const LabelMediumBodyWhite = styled(LabelMediumBody)`
 `;
 
 const LabelMediumBodyBlack = styled(LabelMediumBody)`
-    color: ${COLOR.secondary};
+    color: ${COLOR.black};
 `;
 
 const LabelMediumBodyGold = styled(LabelMediumBody)`
@@ -264,7 +285,7 @@ const LabelMediumBodyGold = styled(LabelMediumBody)`
 // #region *** LABEL MEDIUM FOOTER ***
 
 const LabelMediumFooter = styled(LabelMedium)`
-    font-size: ${SIZE.fontFooter};
+    font-size: ${SIZE.caption};
 `;
 
 const LabelMediumFooterWhite = styled(LabelMediumFooter)`
@@ -272,7 +293,7 @@ const LabelMediumFooterWhite = styled(LabelMediumFooter)`
 `;
 
 const LabelMediumFooterBlack = styled(LabelMediumFooter)`
-    color: ${COLOR.secondary};
+    color: ${COLOR.black};
 `;
 
 const LabelMediumFooterGold = styled(LabelMediumFooter)`
@@ -287,7 +308,7 @@ const LabelMediumFooterGold = styled(LabelMediumFooter)`
 // #region *** LABEL LIGHT TITLE ***
 
 const LabelLightTitle = styled(LabelLight)`
-    font-size: ${SIZE.fontTitle};
+    font-size: ${SIZE.title};
 `;
 
 const LabelLightTitleWhite = styled(LabelLightTitle)`
@@ -295,7 +316,7 @@ const LabelLightTitleWhite = styled(LabelLightTitle)`
 `;
 
 const LabelLightTitleBlack = styled(LabelLightTitle)`
-    color: ${COLOR.secondary};
+    color: ${COLOR.black};
 `;
 
 const LabelLightTitleGold = styled(LabelLightTitle)`
@@ -307,7 +328,7 @@ const LabelLightTitleGold = styled(LabelLightTitle)`
 // #region *** LABEL LIGHT SUBTITLE ***
 
 const LabelLightSubtitle = styled(LabelLight)`
-    font-size: ${SIZE.fontSubtitle};
+    font-size: ${SIZE.subtitle};
 `;
 
 const LabelLightSubtitleWhite = styled(LabelLightSubtitle)`
@@ -315,7 +336,7 @@ const LabelLightSubtitleWhite = styled(LabelLightSubtitle)`
 `;
 
 const LabelLightSubtitleBlack = styled(LabelLightSubtitle)`
-    color: ${COLOR.secondary};
+    color: ${COLOR.black};
 `;
 
 const LabelLightSubtitleGold = styled(LabelLightSubtitle)`
@@ -327,7 +348,7 @@ const LabelLightSubtitleGold = styled(LabelLightSubtitle)`
 // #region *** LABEL LIGHT BODY ***
 
 const LabelLightBody = styled(LabelLight)`
-    font-size: ${SIZE.fontBody};
+    font-size: ${SIZE.body};
 `;
 
 const LabelLightBodyWhite = styled(LabelLightBody)`
@@ -335,7 +356,7 @@ const LabelLightBodyWhite = styled(LabelLightBody)`
 `;
 
 const LabelLightBodyBlack = styled(LabelLightBody)`
-    color: ${COLOR.secondary};
+    color: ${COLOR.black};
 `;
 
 const LabelLightBodyGold = styled(LabelLightBody)`
@@ -347,7 +368,7 @@ const LabelLightBodyGold = styled(LabelLightBody)`
 // #region *** LABEL LIGHT FOOTER ***
 
 const LabelLightFooter = styled(LabelLight)`
-    font-size: ${SIZE.fontFooter};
+    font-size: ${SIZE.caption};
 `;
 
 const LabelLightFooterWhite = styled(LabelLightFooter)`
@@ -355,7 +376,7 @@ const LabelLightFooterWhite = styled(LabelLightFooter)`
 `;
 
 const LabelLightFooterBlack = styled(LabelLightFooter)`
-    color: ${COLOR.secondary};
+    color: ${COLOR.black};
 `;
 
 const LabelLightFooterGold = styled(LabelLightFooter)`
@@ -368,53 +389,77 @@ const LabelLightFooterGold = styled(LabelLightFooter)`
 
 
 export { 
-    COLOR, 
-    SIZE, 
+    LabelRegularTitlePrimary,
+    LabelRegularTitlePrimaryDark,
+    LabelRegularTitleSecondary,
     LabelRegularTitleWhite, 
-    LabelRegularTitleBlack, 
-    LabelRegularTitleGold,
+    LabelRegularTitleBlack,
+    LabelRegularTitleGray,
+
+    LabelRegularSubtitlePrimary,
+    LabelRegularSubtitlePrimaryDark,
+    LabelRegularSubtitleSecondary,
     LabelRegularSubtitleWhite,
     LabelRegularSubtitleBlack,
-    LabelRegularSubtitleGold,
+    LabelRegularSubtitleGray,
+
+    LabelRegularBodyPrimary,
+    LabelRegularBodyPrimaryDark,
+    LabelRegularBodySecondary,
     LabelRegularBodyWhite,
     LabelRegularBodyBlack,
-    LabelRegularBodyGold,
+    LabelRegularBodyGray,
+
     LabelRegularFooterWhite,
     LabelRegularFooterBlack,
     LabelRegularFooterGold,
+
+    LabelBold,
+    
     LabelBoldTitleWhite,
     LabelBoldTitleBlack,
     LabelBoldTitleGold,
+
     LabelBoldSubtitleWhite,
     LabelBoldSubtitleBlack,
     LabelBoldSubtitleGold,
+
     LabelBoldBodyWhite,
     LabelBoldBodyBlack,
     LabelBoldBodyGold,
+
     LabelBoldFooterWhite,
     LabelBoldFooterBlack,
     LabelBoldFooterGold,
+
     LabelMediumTitleWhite,
     LabelMediumTitleBlack,
     LabelMediumTitleGold,
+
     LabelMediumSubtitleWhite,
     LabelMediumSubtitleBlack,
     LabelMediumSubtitleGold,
+    
     LabelMediumBodyWhite,
     LabelMediumBodyBlack,
     LabelMediumBodyGold,
+
     LabelMediumFooterWhite,
     LabelMediumFooterBlack,
     LabelMediumFooterGold,
+
     LabelLightTitleWhite,
     LabelLightTitleBlack,
     LabelLightTitleGold,
+
     LabelLightSubtitleWhite,
     LabelLightSubtitleBlack,
     LabelLightSubtitleGold,
+
     LabelLightBodyWhite,
     LabelLightBodyBlack,
     LabelLightBodyGold,
+
     LabelLightFooterWhite,
     LabelLightFooterBlack,
     LabelLightFooterGold

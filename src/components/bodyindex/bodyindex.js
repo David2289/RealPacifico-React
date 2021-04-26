@@ -1,24 +1,14 @@
-@import '../commons/_variables.scss';
-@import '../commons/_classes.scss';
+import styled from 'styled-components';
 
+const SectOurProposal = styled.div`
+    height: 420px;
+    margin: 60px 0;
 
-/// "s" size ///
-@media only screen and (min-width: 0px) and (max-width: 600px) {
-    // When Row have valign-wrapper to center its content, the Grid break up.
-    // To solve it. Is neceasary to use display inherit:
-    .row.valign-wrapper {
-        display: inherit;
-    }
-}
-
-.parallax_bg {
-    @extend .margin_60_0;
-    
     // Cover and center background image: //
     background-position: 50% 50%; /*El cuadro ajustado se puede centrar horizontal y verticalmente*/
     background-size: cover; /*El cuadro de la imagen se ajusta a la dimensión más pequeña del div con el objetivo de cubrirla*/
     background-repeat: no-repeat;
-    
+
     // To make the overlay: //
     position: relative;
     z-index: -1;
@@ -34,17 +24,6 @@
         background: $secondary_color;
         opacity: 0.6;
     }
-}
+`;
 
-.parallax_content {
-    position: relative;
-    z-index: 1;
-
-    img {
-        margin: auto;
-        display: block;
-        margin-bottom: 15px;
-        max-height: 35px;
-    }
-}
-
+export { SectOurProposal };

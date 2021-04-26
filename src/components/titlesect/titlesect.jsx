@@ -1,14 +1,32 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { COLOR, SIZE } from '../commons/base.js'
-import { TitleLabel, TitleUnderline } from './titlesect.js'
-import { ThemeProvider } from 'styled-components';
+import { COLOR, SIZE } from '../commons/constants.js'
+import { LabelBold } from '../commons/labels.js'
+import styled, { ThemeProvider } from 'styled-components';
+
+
+const TitleDisplay = styled(LabelBold)`
+    font-size: ${SIZE.display};
+    color: ${props => props.theme.color};
+`;
+
+TitleDisplay.defaultProps = {
+    theme: {
+        color: COLOR.secondary
+    }
+}
+
+const TitleUnderline = styled.div`
+    width: 90px;
+    height: 4px;
+    background-color: ${COLOR.primary};
+    margin-top: 10px;
+`;
 
 
 const TitleSect = (props) => {
 
     const theme = {
-        size: props.size ? props.size : SIZE.fontTitle,
         color: props.color ? props.color : COLOR.secondary
     }
 
@@ -17,7 +35,7 @@ const TitleSect = (props) => {
     return (
         <div>
             <ThemeProvider theme={theme}>
-                <TitleLabel>{props.title}</TitleLabel>
+                <TitleDisplay>{props.children}</TitleDisplay>
             </ThemeProvider>
             <TitleUnderline></TitleUnderline>
         </div>
@@ -25,9 +43,7 @@ const TitleSect = (props) => {
 }
 
 TitleSect.propTypes = {
-    title: PropTypes.string.isRequired,
-    color: PropTypes.string,
-    size: PropTypes.string
+    color: PropTypes.string
 }
 
 export default TitleSect;
