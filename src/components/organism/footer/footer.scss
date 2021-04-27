@@ -1,18 +1,8 @@
-@import '../commons/_variables.scss';
-@import '../commons/_classes.scss';
+@import '../../commons/_variables.scss';
+@import '../../commons/_classes.scss';
 
-
-/// "s" size ///
-@media only screen and (min-width: 0px) and (max-width: 600px) {
-    // When Row have valign-wrapper to center its content, the Grid break up.
-    // To solve it. Is neceasary to use display inherit:
-    .row.valign-wrapper {
-        display: inherit;
-    }
-}
-
-.parallax_bg {
-    @extend .margin_60_0;
+.footer {
+    background-image: url(../../../images/img_5.jpg);
     
     // Cover and center background image: //
     background-position: 50% 50%; /*El cuadro ajustado se puede centrar horizontal y verticalmente*/
@@ -21,7 +11,7 @@
     
     // To make the overlay: //
     position: relative;
-    z-index: -1;
+    z-index: 0;
 
     &::after {
         position: absolute;
@@ -30,21 +20,41 @@
         width: 100%;
         top: 0;
         left: 0;
-        z-index: 0;
+        z-index: -1;
         background: $secondary_color;
         opacity: 0.6;
     }
 }
 
-.parallax_content {
-    position: relative;
-    z-index: 1;
+.logo_content {
+    margin: 20px 0 30px 0;
 
     img {
+        width: 180px;
         margin: auto;
-        display: block;
-        margin-bottom: 15px;
-        max-height: 35px;
     }
 }
 
+.contact_content {
+    div {
+        width: 26px;
+        height: 26px;
+        margin-right: 10px;
+        float: left;
+    }
+    p {
+        @extend %font_regular_body_white;
+    }
+}
+
+.contact_icon {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.contact_icon_vertical {
+    width: 50%;
+    display: block;
+    margin: auto;
+}

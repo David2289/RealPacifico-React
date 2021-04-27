@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import './slider.scss';
 import Slide from './slide.jsx';
 
-const path_slide1 = require('../../images/img_1.jpg');
-const path_slide2 = require('../../images/img_2.jpg');
-const path_slide3 = require('../../images/img_3.jpg');
+const path_slide1 = require('../../../images/img_1.jpg');
+const path_slide2 = require('../../../images/img_2.jpg');
+const path_slide3 = require('../../../images/img_3.jpg');
 
 const Slider = (props) => {
     var bubbles_visible = props.showBubble ? 'visible' : 'hidden';

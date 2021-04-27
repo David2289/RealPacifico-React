@@ -4,9 +4,9 @@ import 'materialize-css';
 import {Navbar, NavItem} from 'react-materialize';
 
 
-const logo_path = require('../../images/ic_logo_black.svg');
+const logo_path = require('../../../images/ic_logo_black.svg');
 const logo_dom = <a className='brand-logo' href='#'><img className='navbar_logo' src={logo_path}/></a>
-const burger_path = require('../../images/ic_burger.svg');
+const burger_path = require('../../../images/ic_burger.svg');
 const burger_dom = <img className='navbar_burger' src={burger_path}/>;
 
 const Header = () => (

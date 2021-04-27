@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './components/header/header.jsx';
-import Feet from './components/footer/footer.jsx';
-import BodyIndex from './components/bodyindex/bodyindex.jsx';
+import Header from './components/organism/header/header.jsx';
+import Feet from './components/organism/footer/footer.jsx';
+import BodyIndex from './components/templates/bodyindex/bodyindex.jsx';
 
 ReactDOM.render(
     <Header></Header>, 

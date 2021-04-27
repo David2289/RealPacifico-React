@@ -1,20 +1,19 @@
 import React from 'react';
 import { Container, Row, Col, Parallax } from 'react-materialize';
-import { COLOR } from '../commons/constants.js';
-import Slider from '../slider/slider.jsx'
-import TitleSect from '../titlesect/titlesect.jsx';
-import IconTexts from '../icontexts/icontexts.jsx';
-import { SectOurProposal } from '../bodyindex/bodyindex.js';
+import { COLOR } from '../../commons/constants.js';
+import Slider from '../../organism/slider/slider.jsx'
+import TitleSect from '../../atoms/titlesect.jsx';
+import IconTexts from '../../molecules/icon_texts.jsx';
 import './bodyindex.scss'
 
-const path_classroom_img = require('../../images/img_6.jpg');
-const path_img_15 = require('../../images/img_15.jpg');
-const path_img_13 = require('../../images/img_13.jpg');
+const path_classroom_img = require('../../../images/img_6.jpg');
+const path_img_15 = require('../../../images/img_15.jpg');
+const path_img_13 = require('../../../images/img_13.jpg');
 
-const path_ic_initial = require('../../images/ic_initial.svg');
-const path_ic_primary = require('../../images/ic_primary.svg');
-const path_ic_highschool = require('../../images/ic_highschool.svg');
-const path_ic_system5 = require('../../images/ic_system5.svg');
+const path_ic_initial = require('../../../images/ic_initial.svg');
+const path_ic_primary = require('../../../images/ic_primary.svg');
+const path_ic_highschool = require('../../../images/ic_highschool.svg');
+const path_ic_system5 = require('../../../images/ic_system5.svg');
 
 const BodyIndex = () => {
     return (
