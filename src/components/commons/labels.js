@@ -389,6 +389,8 @@ const LabelLightFooterGold = styled(LabelLightFooter)`
 
 
 export { 
+    LabelRegular, 
+
     LabelRegularTitlePrimary,
     LabelRegularTitlePrimaryDark,
     LabelRegularTitleSecondary,

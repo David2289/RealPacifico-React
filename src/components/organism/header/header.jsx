@@ -1,7 +1,7 @@
 import React from 'react';
 import './header.scss';
 import 'materialize-css';
-import {Navbar, NavItem} from 'react-materialize';
+import { Navbar, NavItem } from 'react-materialize';
 
 
 const logo_path = require('../../../images/ic_logo_black.svg');
