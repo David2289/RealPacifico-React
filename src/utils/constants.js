@@ -21,7 +21,15 @@ const SIZE = {
     small: '11px'
 }
 
+const SCREEN_MEDIA = {
+    small: `(min-width: 0px) and (max-width: 600px)`,
+    medium : `(min-width: 600px) and (max-width: 992px)`,
+    long: `(min-width: 992px) and (max-width: 1200px)`,
+    xlong: `(min-width: 1200px)`
+}
+
 export {
     COLOR,
-    SIZE
+    SIZE,
+    SCREEN_MEDIA
 }
