@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { SIZE, COLOR } from '../../utils/constants.js';
-import { LabelRegular } from '../atoms/label.jsx'
+import { LabelSailecRegular } from '../atoms/label.jsx'
 
 
 const Root = styled.a`
@@ -22,7 +22,7 @@ const Icon = styled.img`
     display: block;
 `;
 
-const LabelRegularBodyWhite = styled(LabelRegular)`
+const LabelRegularBodyWhite = styled(LabelSailecRegular)`
     font-size: ${SIZE.body};
     color: ${COLOR.white};
     margin-right: 15px;

@@ -2,19 +2,19 @@ import styled from 'styled-components';
 import { COLOR, SIZE } from '../../utils/constants.js';
 
 
-const LabelRegular = styled.p`
+const LabelSailecRegular = styled.p`
     font-family: 'sailecregular'
 `;
 
-const LabelBold = styled.p`
+const LabelSailecBold = styled.p`
     font-family: 'sailecbold'
 `;
 
-const LabelMedium = styled.p`
+const LabelSailecMedium = styled.p`
     font-family: 'sailecmedium'
 `;
 
-const LabelLight = styled.p`
+const LabelSailecLight = styled.p`
     font-family: 'saileclight'
 `;
 
@@ -22,7 +22,7 @@ const LabelLight = styled.p`
 
 // #region *** LABEL REGULAR TITLE ***
 
-const LabelRegularTitle = styled(LabelRegular)`
+const LabelRegularTitle = styled(LabelSailecRegular)`
     font-size: ${SIZE.title};
 `;
 
@@ -54,7 +54,7 @@ const LabelRegularTitleGray = styled(LabelRegularTitle)`
 
 // #region *** LABEL REGULAR SUBTITLE ***
 
-const LabelRegularSubtitle = styled(LabelRegular)`
+const LabelRegularSubtitle = styled(LabelSailecRegular)`
     font-size: ${SIZE.subtitle};
 `;
 
@@ -86,7 +86,7 @@ const LabelRegularSubtitleGray = styled(LabelRegularSubtitle)`
 
 // #region *** LABEL REGULAR BODY ***
 
-const LabelRegularBody = styled(LabelRegular)`
+const LabelRegularBody = styled(LabelSailecRegular)`
     font-size: ${SIZE.body};
 `;
 
@@ -118,7 +118,7 @@ const LabelRegularBodyGray = styled(LabelRegularBody)`
 
 // #region *** LABEL REGULAR FOOTER ***
 
-const LabelRegularFooter = styled(LabelRegular)`
+const LabelRegularFooter = styled(LabelSailecRegular)`
     font-size: ${SIZE.caption};
 `;
 
@@ -141,7 +141,7 @@ const LabelRegularFooterGold = styled(LabelRegularFooter)`
 
 // #region *** LABEL BOLD TITLE ***
 
-const LabelBoldTitle = styled(LabelBold)`
+const LabelBoldTitle = styled(LabelSailecBold)`
     font-size: ${SIZE.title};
 `;
 
@@ -161,7 +161,7 @@ const LabelBoldTitleGold = styled(LabelBoldTitle)`
 
 // #region *** LABEL BOLD SUBTITLE ***
 
-const LabelBoldSubtitle = styled(LabelBold)`
+const LabelBoldSubtitle = styled(LabelSailecBold)`
     font-size: ${SIZE.subtitle};
 `;
 
@@ -181,7 +181,7 @@ const LabelBoldSubtitleGold = styled(LabelBoldSubtitle)`
 
 // #region *** LABEL BOLD BODY ***
 
-const LabelBoldBody = styled(LabelBold)`
+const LabelBoldBody = styled(LabelSailecBold)`
     font-size: ${SIZE.body};
 `;
 
@@ -201,7 +201,7 @@ const LabelBoldBodyGold = styled(LabelBoldBody)`
 
 // #region *** LABEL BOLD FOOTER ***
 
-const LabelBoldFooter = styled(LabelBold)`
+const LabelBoldFooter = styled(LabelSailecBold)`
     font-size: ${SIZE.caption};
 `;
 
@@ -224,7 +224,7 @@ const LabelBoldFooterGold = styled(LabelBoldFooter)`
 
 // #region *** LABEL MEDIUM TITLE ***
 
-const LabelMediumTitle = styled(LabelMedium)`
+const LabelMediumTitle = styled(LabelSailecMedium)`
     font-size: ${SIZE.title};
 `;
 
@@ -244,7 +244,7 @@ const LabelMediumTitleGold = styled(LabelMediumTitle)`
 
 // #region *** LABEL MEDIUM SUBTITLE ***
 
-const LabelMediumSubtitle = styled(LabelMedium)`
+const LabelMediumSubtitle = styled(LabelSailecMedium)`
     font-size: ${SIZE.subtitle};
 `;
 
@@ -264,7 +264,7 @@ const LabelMediumSubtitleGold = styled(LabelMediumSubtitle)`
 
 // #region *** LABEL MEDIUM BODY ***
 
-const LabelMediumBody = styled(LabelMedium)`
+const LabelMediumBody = styled(LabelSailecMedium)`
     font-size: ${SIZE.body};
 `;
 
@@ -284,7 +284,7 @@ const LabelMediumBodyGold = styled(LabelMediumBody)`
 
 // #region *** LABEL MEDIUM FOOTER ***
 
-const LabelMediumFooter = styled(LabelMedium)`
+const LabelMediumFooter = styled(LabelSailecMedium)`
     font-size: ${SIZE.caption};
 `;
 
@@ -307,7 +307,7 @@ const LabelMediumFooterGold = styled(LabelMediumFooter)`
 
 // #region *** LABEL LIGHT TITLE ***
 
-const LabelLightTitle = styled(LabelLight)`
+const LabelLightTitle = styled(LabelSailecLight)`
     font-size: ${SIZE.title};
 `;
 
@@ -327,7 +327,7 @@ const LabelLightTitleGold = styled(LabelLightTitle)`
 
 // #region *** LABEL LIGHT SUBTITLE ***
 
-const LabelLightSubtitle = styled(LabelLight)`
+const LabelLightSubtitle = styled(LabelSailecLight)`
     font-size: ${SIZE.subtitle};
 `;
 
@@ -347,7 +347,7 @@ const LabelLightSubtitleGold = styled(LabelLightSubtitle)`
 
 // #region *** LABEL LIGHT BODY ***
 
-const LabelLightBody = styled(LabelLight)`
+const LabelLightBody = styled(LabelSailecLight)`
     font-size: ${SIZE.body};
 `;
 
@@ -367,7 +367,7 @@ const LabelLightBodyGold = styled(LabelLightBody)`
 
 // #region *** LABEL LIGHT FOOTER ***
 
-const LabelLightFooter = styled(LabelLight)`
+const LabelLightFooter = styled(LabelSailecLight)`
     font-size: ${SIZE.caption};
 `;
 
@@ -389,7 +389,7 @@ const LabelLightFooterGold = styled(LabelLightFooter)`
 
 
 export { 
-    LabelRegular, 
+    LabelSailecRegular, 
 
     LabelRegularTitlePrimary,
     LabelRegularTitlePrimaryDark,
@@ -416,7 +416,7 @@ export {
     LabelRegularFooterBlack,
     LabelRegularFooterGold,
 
-    LabelBold,
+    LabelSailecBold,
     
     LabelBoldTitleWhite,
     LabelBoldTitleBlack,

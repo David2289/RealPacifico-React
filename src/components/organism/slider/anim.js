@@ -20,7 +20,7 @@ jQuery(function($) {
     for (var i=0; i<slides.length; i++) {
 
         var slide = slides[i];
-        var slideTitle = $(slide).find('.slide_title');
+        var slideTitle = $(slide).find('div').eq(0).find('p');
         var slideDesc = $(slide).find('.slide_description');
 
         timeLines[i].to(slide, {autoAlpha: 1, visibility: 'visible', duration: duration_trans}, 'begin');

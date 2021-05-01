@@ -2,7 +2,7 @@ import React from 'react';
 import 'materialize-css';
 import styled from 'styled-components';
 import { Navbar, NavItem } from 'react-materialize';
-import { LabelMedium } from '../../atoms/label.jsx';
+import { LabelSailecMedium } from '../../atoms/label.jsx';
 import { COLOR, SIZE, SCREEN_MEDIA } from '../../../utils/constants.js';
 
 
@@ -20,7 +20,7 @@ const logo_dom = <a className='brand-logo' href='#'><Logo src={logo_path}></Logo
 const burger_path = require('../../../images/ic_burger.svg');
 const burger_dom = <Burger src={burger_path}></Burger>;
 
-const LabelMediumBodySecondary = styled(LabelMedium)`
+const LabelMediumBodySecondary = styled(LabelSailecMedium)`
     font-size: ${SIZE.body};
     color: ${COLOR.secondary};
 `;

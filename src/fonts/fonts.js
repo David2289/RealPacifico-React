@@ -19,7 +19,7 @@ import HarmonyLite from './instantharmonydemo_lite-webfont.woff';
 import HarmonyLite2 from './instantharmonydemo_lite-webfont.woff2';
 
 
-const FontRegular = createGlobalStyle`
+const FontSailecRegular = createGlobalStyle`
     @font-face {
         font-family: 'Sailec Regular';
         src: local('Sailec Regular'), local('Sailec Regular'),
@@ -30,7 +30,7 @@ const FontRegular = createGlobalStyle`
     }
 `;
 
-const FontMedium = createGlobalStyle`
+const FontSailecMedium = createGlobalStyle`
     @font-face {
         font-family: 'Sailec Medium';
         src: local('Sailec Medium'), local('Sailec Medium'),
@@ -41,7 +41,7 @@ const FontMedium = createGlobalStyle`
     }
 `;
 
-const FontBold = createGlobalStyle`
+const FontSailecBold = createGlobalStyle`
     @font-face {
         font-family: 'Sailec Bold';
         src: local('Sailec Bold'), local('Sailec Bold'),
@@ -52,7 +52,7 @@ const FontBold = createGlobalStyle`
     }
 `;
 
-const FontLight = createGlobalStyle`
+const FontSailecLight = createGlobalStyle`
     @font-face {
         font-family: 'Sailec Light';
         src: local('Sailec Light'), local('Sailec Light'),
@@ -87,8 +87,10 @@ const FontHarmonyLite = createGlobalStyle`
 
 
 export { 
-    FontRegular,
-    FontMedium,
-    FontBold,
-    FontLight
+    FontSailecRegular,
+    FontSailecMedium,
+    FontSailecBold,
+    FontSailecLight,
+    FontHarmonyRegular,
+    FontHarmonyLite
 }

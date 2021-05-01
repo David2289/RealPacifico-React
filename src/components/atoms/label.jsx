@@ -1,65 +1,99 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FontRegular, FontMedium, FontBold, FontLight } from '../../fonts/fonts.js'
+import { 
+    FontSailecRegular, 
+    FontSailecMedium, 
+    FontSailecBold, 
+    FontSailecLight, 
+    FontHarmonyRegular, 
+    FontHarmonyLite } from '../../fonts/fonts.js'
 
 
-const LabelRegularStyled = styled.p`
+const LabelSailecRegularStyled = styled.p`
     font-family: 'Sailec Regular';
 `;
 
-const LabelMediumStyled = styled.p`
+const LabelSailecMediumStyled = styled.p`
     font-family: 'Sailec Medium';
 `;
 
-const LabelBoldStyled = styled.p`
+const LabelSailecBoldStyled = styled.p`
     font-family: 'Sailec Bold';
 `;
 
-const LabelLightStyled = styled.p`
+const LabelSailecLightStyled = styled.p`
     font-family: 'Sailec Light';
 `;
 
+const LabelHarmonyRegularStyled = styled.p`
+    font-family: 'Harmony Regular';
+`;
 
-const LabelRegular = (props) => {
+const LabelHarmonyLiteStyled = styled.p`
+    font-family: 'Harmony Lite';
+`;
+
+
+const LabelSailecRegular = (props) => {
     return (
         <div>
-            <FontRegular></FontRegular>
-            <LabelRegularStyled>{props.children}</LabelRegularStyled>
+            <FontSailecRegular></FontSailecRegular>
+            <LabelSailecRegularStyled>{props.children}</LabelSailecRegularStyled>
         </div>
     );
 }
 
-const LabelMedium = (props) => {
+const LabelSailecMedium = (props) => {
     return (
         <div>
-            <FontMedium></FontMedium>
-            <LabelMediumStyled>{props.children}</LabelMediumStyled>
+            <FontSailecMedium></FontSailecMedium>
+            <LabelSailecMediumStyled>{props.children}</LabelSailecMediumStyled>
         </div>
     );
 }
 
-const LabelBold = (props) => {
+const LabelSailecBold = (props) => {
     return (
         <div>
-            <FontBold></FontBold>
-            <LabelBoldStyled>{props.children}</LabelBoldStyled>
+            <FontSailecBold></FontSailecBold>
+            <LabelSailecBoldStyled>{props.children}</LabelSailecBoldStyled>
         </div>
     );
 }
 
-const LabelLight = (props) => {
+const LabelSailecLight = (props) => {
     return (
         <div>
-            <FontLight></FontLight>
-            <LabelLightStyled>{props.children}</LabelLightStyled>
+            <FontSailecLight></FontSailecLight>
+            <LabelSailecLightStyled>{props.children}</LabelSailecLightStyled>
+        </div>
+    );
+}
+
+const LabelHarmonyRegular = (props) => {
+    return (
+        <div>
+            <FontHarmonyRegular></FontHarmonyRegular>
+            <LabelHarmonyRegularStyled>{props.children}</LabelHarmonyRegularStyled>
+        </div>
+    );
+}
+
+const LabelHarmonyLite = (props) => {
+    return (
+        <div>
+            <FontHarmonyLite></FontHarmonyLite>
+            <LabelHarmonyLiteStyled>{props.children}</LabelHarmonyLiteStyled>
         </div>
     );
 }
 
 
 export {
-    LabelRegular, 
-    LabelMedium, 
-    LabelBold, 
-    LabelLight
+    LabelSailecRegular, 
+    LabelSailecMedium, 
+    LabelSailecBold, 
+    LabelSailecLight,
+    LabelHarmonyRegular,
+    LabelHarmonyLite
 }

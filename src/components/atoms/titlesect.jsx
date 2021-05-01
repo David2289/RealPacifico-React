@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { COLOR, SIZE } from '../../utils/constants.js'
-import { LabelBold } from '../commons/labels.js'
+import { LabelSailecBold } from '../commons/labels.js'
 import styled, { ThemeProvider } from 'styled-components';
 
 
-const TitleDisplay = styled(LabelBold)`
+const TitleDisplay = styled(LabelSailecBold)`
     font-size: ${SIZE.display};
     color: ${props => props.theme.color};
 `;
