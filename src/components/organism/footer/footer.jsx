@@ -1,7 +1,7 @@
 import React from 'react';
 import 'materialize-css';
 import { Footer } from 'react-materialize';
-import { COLOR } from '../../commons/constants.js';
+import { COLOR } from '../../../utils/constants.js';
 import TextButton from '../../atoms/textbutton.jsx';
 import styled from 'styled-components';
 

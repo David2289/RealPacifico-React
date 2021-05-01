@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { COLOR, SIZE } from '../commons/constants.js'
+import { COLOR, SIZE } from '../../utils/constants.js'
 import { LabelBold } from '../commons/labels.js'
 import styled, { ThemeProvider } from 'styled-components';
 

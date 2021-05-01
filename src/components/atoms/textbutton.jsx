@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { SIZE, COLOR } from '../commons/constants.js';
+import { SIZE, COLOR } from '../../utils/constants.js';
 import { LabelRegular } from '../atoms/label.jsx'
 
 

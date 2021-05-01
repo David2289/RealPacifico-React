@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { COLOR, SIZE } from './constants.js';
+import { COLOR, SIZE } from '../../utils/constants.js';
 
 
 const LabelRegular = styled.p`

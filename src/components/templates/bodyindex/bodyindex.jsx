@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Parallax } from 'react-materialize';
-import { COLOR } from '../../commons/constants.js';
+import { COLOR } from '../../../utils/constants.js';
 import Slider from '../../organism/slider/slider.jsx'
 import TitleSect from '../../atoms/titlesect.jsx';
 import IconTexts from '../../molecules/icon_texts.jsx';
