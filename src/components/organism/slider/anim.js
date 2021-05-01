@@ -7,7 +7,7 @@ jQuery(function($) {
     const duration_slide = 8; // duration in secs
     const duration_trans = 0.5; // duration in secs
 
-    const slides = $('#slider_content .slide_content');
+    const slides = $('#slider_content #slide');
     const bubblesUnder = $('#slider_content .bubble_under');
     const bubblesOver = $('#slider_content .bubble_over');
 

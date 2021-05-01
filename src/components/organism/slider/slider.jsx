@@ -13,22 +13,19 @@ const Slider = (props) => {
     return (
         <div id='slider_content'>
             <Slide 
-            bg_path={path_slide1}
-            title='Excelente nivel académico'
-            description='Potenciamos el desarrollo intelectual y personal de nuestros estudiantes a través de un eficiente sistema educativo en el campo de las Matemáticas, Ciencias, Letras y Desarrollo Personal.'>
-            </Slide>
+                bg_path={path_slide1}
+                title='Excelente nivel académico'
+                description='Potenciamos el desarrollo intelectual y personal de nuestros estudiantes a través de un eficiente sistema educativo en el campo de las Matemáticas, Ciencias, Letras y Desarrollo Personal.'/>
 
             <Slide 
-            bg_path={path_slide2}
-            title='La mejor propuesta educativa'
-            description='"La exigencia saca lo mejor de cada estudiante"'>
-            </Slide>
+                bg_path={path_slide2}
+                title='La mejor propuesta educativa'
+                description='"La exigencia saca lo mejor de cada estudiante"'/>
 
             <Slide 
-            bg_path={path_slide3}
-            title='La mejor plana docente'
-            description='Los mejores docentes, con la más alta experiencia académica. Siempre actualizados.'>
-            </Slide>
+                bg_path={path_slide3}
+                title='La mejor plana docente'
+                description='Los mejores docentes, con la más alta experiencia académica. Siempre actualizados.'/>
 
             <div className='bubble_content' style={{visibility: bubbles_visible}}>
                 <div>
