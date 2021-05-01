@@ -2,3 +2,4 @@ Icon\r
 node_modules
 dist
 .cache
+.vscode

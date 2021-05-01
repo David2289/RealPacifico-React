@@ -5,17 +5,21 @@ import { SIZE, COLOR } from '../commons/constants.js';
 import { LabelRegular } from '../atoms/label.jsx'
 
 
-const Root = styled.div`
-    &:hover {
-        cursor:pointer;
-    }
+const Root = styled.a`
+    color: ${COLOR.white}
+`;
+
+const IconContent = styled.div`
+    width: 26px;
+    height: 26px;
+    margin-left: 15px;
+    margin-right: 15px;
 `;
 
 const Icon = styled.img`
-    height: 26px;
+    height: 100%;
+    width: 100%;
     display: block;
-    margin-left: 15px;
-    margin-right: 15px;
 `;
 
 const LabelRegularBodyWhite = styled(LabelRegular)`
@@ -27,17 +31,21 @@ const LabelRegularBodyWhite = styled(LabelRegular)`
 
 const TextButton = (props) => {
     return (
-        <Root className='valign-wrapper'>
-            
-            <Icon src={props.ic_path}></Icon>
-            
+        <Root 
+            className='valign-wrapper'
+            href={props.href}
+            target={props.target}>
+            <IconContent>
+                <Icon src={props.ic_path}></Icon>
+            </IconContent>
             <LabelRegularBodyWhite>{props.children}</LabelRegularBodyWhite>
-
         </Root>
     );
 }
 
 TextButton.propTypes = {
+    href: PropTypes.string,
+    target: PropTypes.string,
     ic_path: PropTypes.string
 }
 
