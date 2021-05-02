@@ -1,22 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import { COLOR, SIZE } from '../../utils/constants.js'
-import { LabelSailecBold } from '../commons/labels.js'
-import styled, { ThemeProvider } from 'styled-components';
+import { LabelSailecBold } from '../atoms/label.jsx'
 
 
 const TitleDisplay = styled(LabelSailecBold)`
     font-size: ${SIZE.display};
-    color: ${props => props.theme.color};
+    color: ${props => props.title_color ? props.title_color : COLOR.secondary};
 `;
 
-TitleDisplay.defaultProps = {
-    theme: {
-        color: COLOR.secondary
-    }
-}
-
-const TitleUnderline = styled.div`
+const Underline = styled.div`
     width: 90px;
     height: 4px;
     background-color: ${COLOR.primary};
@@ -25,19 +19,10 @@ const TitleUnderline = styled.div`
 
 
 const TitleSect = (props) => {
-
-    const theme = {
-        color: props.color ? props.color : COLOR.secondary
-    }
-
-    console.table(theme);
-
     return (
         <div>
-            <ThemeProvider theme={theme}>
-                <TitleDisplay>{props.children}</TitleDisplay>
-            </ThemeProvider>
-            <TitleUnderline></TitleUnderline>
+            <TitleDisplay title_color={props.color}>{props.children}</TitleDisplay>
+            <Underline></Underline>
         </div>
     );
 }
