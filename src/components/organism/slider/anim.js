@@ -8,8 +8,8 @@ jQuery(function($) {
     const duration_trans = 0.5; // duration in secs
 
     const slides = $('#slider_content #slide');
-    const bubblesUnder = $('#slider_content .bubble_under');
-    const bubblesOver = $('#slider_content .bubble_over');
+    const bubblesUnder = $('#slider_content #bubble_under');
+    const bubblesOver = $('#slider_content #bubble_over');
 
     const timeLine1 = gsap.timeline({repeat: -1, delay: 0});
     const timeLine2 = gsap.timeline({repeat: -1, delay: duration_slide});
@@ -34,7 +34,7 @@ jQuery(function($) {
     }
 
     bubblesUnder.on("click", function() {
-        var index = $('#slider_content .bubble_under').index( this ); // return the clicked index
+        var index = $('#slider_content #bubble_under').index( this ); // return the clicked index
         for (var j = 0; j< slides.length; j++) {
             if (j == index) {
                 var timeLine = timeLines[j];

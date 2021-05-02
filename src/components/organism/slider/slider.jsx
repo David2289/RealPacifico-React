@@ -1,17 +1,66 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './slider.scss';
+import styled from 'styled-components';
+import { COLOR } from '../../../utils/constants.js';
 import Slide from './slide.jsx';
 
 const path_slide1 = require('../../../images/img_1.jpg');
 const path_slide2 = require('../../../images/img_2.jpg');
 const path_slide3 = require('../../../images/img_3.jpg');
 
+
+const SliderContent = styled.div`
+    height: 600px;
+    width: 100%;
+	position: relative;
+	overflow: hidden;
+`;
+
+const BubbleContent = styled.div`
+    height:50px;
+    width: 120px;
+    margin:0 auto;
+    position:relative;
+    top:550px;
+    bottom: 0;
+    z-index: 40;
+    > div {
+        display:block;
+        height:20px;
+        width:40px;
+        float:left;
+    }
+`;
+
+const Bubble = styled.span`
+    position: absolute;
+	display: block;
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	float: left;
+	margin: 0px 14px;
+`;
+
+const BubbleUnder = styled(Bubble)`
+    border: 1px solid ${COLOR.primaryClear};
+    &:hover {
+        cursor: pointer;
+        background: ${COLOR.primaryClear};
+    }
+`;
+
+const BubbleOver = styled(Bubble)`
+    background: ${COLOR.primary};
+	opacity: 0;
+    visibility: hidden;
+`;
+
 const Slider = (props) => {
     var bubbles_visible = props.showBubble ? 'visible' : 'hidden';
 
     return (
-        <div id='slider_content'>
+        <SliderContent id='slider_content'>
             <Slide 
                 bg_path={path_slide1}
                 title='Excelente nivel académico'
@@ -27,21 +76,21 @@ const Slider = (props) => {
                 title='La mejor plana docente'
                 description='Los mejores docentes, con la más alta experiencia académica. Siempre actualizados.'/>
 
-            <div className='bubble_content' style={{visibility: bubbles_visible}}>
+            <BubbleContent style={{visibility: bubbles_visible}}>
                 <div>
-                    <span className='bubble_under'></span>
-                    <span className='bubble_over'></span>
+                    <BubbleUnder id='bubble_under'/>
+                    <BubbleOver id='bubble_over'/>
                 </div>
                 <div>
-                    <span className='bubble_under'></span>
-                    <span className='bubble_over'></span>
+                    <BubbleUnder id='bubble_under'/>
+                    <BubbleOver id='bubble_over'/>
                 </div>
                 <div>
-                    <span className='bubble_under'></span>
-                    <span className='bubble_over'></span>
+                    <BubbleUnder id='bubble_under'/>
+                    <BubbleOver id='bubble_over'/>
                 </div>
-            </div>
-        </div>
+            </BubbleContent>
+        </SliderContent>
     );
 }
 

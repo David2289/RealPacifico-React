@@ -10,6 +10,7 @@ const SlideStyled = styled.div`
     width: 100%;
     opacity: 0;
     visibility: hidden;
+    background-image: url(${props => props.background});
     // Cover and center background image: //
     background-position: 50% 50%; /*El cuadro ajustado se puede centrar horizontal y verticalmente*/
     background-size: cover; /*El cuadro de la imagen se ajusta a la dimensión más pequeña del div con el objetivo de cubrirla*/
@@ -85,14 +86,11 @@ const Description = styled(LabelHarmonyLite)`
 `;
 
 const Slide = (props) => {
-    const SlideBg = styled(SlideStyled)`
-        background-image: url(${props.bg_path});
-    `;
     return (
-        <SlideBg id='slide'>
+        <SlideStyled id='slide' background={props.bg_path}>
             <Title>{props.title}</Title>
             <Description>{props.description}</Description>
-        </SlideBg>
+        </SlideStyled>
     );
 }
 
