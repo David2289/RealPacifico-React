@@ -20,8 +20,8 @@ jQuery(function($) {
     for (var i=0; i<slides.length; i++) {
 
         var slide = slides[i];
-        var slideTitle = $(slide).find('div').eq(0).find('p');
-        var slideDesc = $(slide).find('.slide_description');
+        var slideTitle = $(slide).find('p').eq(0);
+        var slideDesc = $(slide).find('p').eq(1);
 
         timeLines[i].to(slide, {autoAlpha: 1, visibility: 'visible', duration: duration_trans}, 'begin');
         timeLines[i].to(slideTitle, {x: '18%', duration: duration_slide}, 'begin');

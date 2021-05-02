@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { COLOR, SCREEN_MEDIA } from '../../../utils/constants.js';
-import { LabelHarmonyRegular, LabelSailecBold, LabelSailecRegular } from '../../atoms/label.jsx';
-import './slide.scss';
+import { LabelHarmonyRegular, LabelHarmonyLite } from '../../atoms/label.jsx';
 
 
 const SlideStyled = styled.div`
@@ -55,16 +54,45 @@ const Title = styled(LabelHarmonyRegular)`
         font-size: 55px;
     }
 `;
-const TitleProve = styled.p`
+
+const Description = styled(LabelHarmonyLite)`
+    width: 60%;
+    font-size: 35px;
+    position: absolute;
+    top: 45%;
+    right: 10%;
     color: ${COLOR.white};
+    @media only screen and ${SCREEN_MEDIA.small} {
+        width: 78%;
+        right: 5%;
+        font-size:26px;
+    }
+    @media only screen and ${SCREEN_MEDIA.medium} {
+        width: 70%;
+        right: 6%;
+        font-size:28px;
+    }
+    @media only screen and ${SCREEN_MEDIA.long} {
+        width: 65%;
+        right: 8%;
+        font-size:32px;
+    }
+    @media only screen and ${SCREEN_MEDIA.xlong} {
+        width: 60%;
+        right: 10%;
+        font-size: 35px;
+    }
 `;
 
 const Slide = (props) => {
+    const SlideBg = styled(SlideStyled)`
+        background-image: url(${props.bg_path});
+    `;
     return (
-        <SlideStyled id='slide' style={{backgroundImage: `url(${props.bg_path})`}}>
+        <SlideBg id='slide'>
             <Title>{props.title}</Title>
-            <p className='slide_description'>{props.description}</p>
-        </SlideStyled>
+            <Description>{props.description}</Description>
+        </SlideBg>
     );
 }
 
