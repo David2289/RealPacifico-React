@@ -55,34 +55,34 @@ const BodyIndex = () => {
                         <Row>
                             <Col s={12} m={6} l={3} xl={3}>
                                 <IconTexts 
-                                ic_path={path_ic_initial} 
-                                desc='Inicial' 
-                                color={COLOR.white} 
-                                centered={true}>
+                                    ic_path={path_ic_initial} 
+                                    desc='Inicial' 
+                                    color={COLOR.white} 
+                                    alignment='center'>
                                 </IconTexts>
                             </Col>
                             <Col s={12} m={6} l={3} xl={3}>
                                 <IconTexts 
-                                ic_path={path_ic_primary} 
-                                desc='Primaria' 
-                                color={COLOR.white} 
-                                centered={true}>
+                                    ic_path={path_ic_primary} 
+                                    desc='Primaria' 
+                                    color={COLOR.white} 
+                                    alignment='center'>
                                 </IconTexts>
                             </Col>
                             <Col s={12} m={6} l={3} xl={3}>
                                 <IconTexts 
-                                ic_path={path_ic_highschool} 
-                                desc='Secundaria' 
-                                color={COLOR.white} 
-                                centered={true}>
+                                    ic_path={path_ic_highschool} 
+                                    desc='Secundaria' 
+                                    color={COLOR.white} 
+                                    alignment='center'>
                                 </IconTexts>
                             </Col>
                             <Col s={12} m={6} l={3} xl={3}>
                                 <IconTexts 
-                                ic_path={path_ic_system5} 
-                                desc='Sistema 5º año' 
-                                color={COLOR.white} 
-                                centered={true}>
+                                    ic_path={path_ic_system5} 
+                                    desc='Sistema 5º año' 
+                                    color={COLOR.white} 
+                                    alignment='center'>
                                 </IconTexts>
                             </Col>
                         </Row>

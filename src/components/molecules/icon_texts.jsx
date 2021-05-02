@@ -1,50 +1,41 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled, { ThemeProvider } from 'styled-components';
-import { COLOR } from '../../utils/constants.js';
-import { LabelBoldBodyBlack, LabelRegularBodyBlack } from '../commons/labels.js';
+import styled from 'styled-components';
+import { COLOR, SIZE } from '../../utils/constants.js';
+import { LabelSailecBold, LabelSailecRegular } from '../atoms/label.jsx';
 
 
 const Icon = styled.img`
     height: '60px';
 `;
 
-const Title = styled(LabelBoldBodyBlack)`
-    color: ${props => props.theme.color};
-    text-align: ${props => props.theme.alignment};
+const Title = styled(LabelSailecBold)`
+    color: ${props => props.title_color ? props.title_color : COLOR.secondary};
+    font-size: ${SIZE.body};
+    text-align: ${props => props.alignment ? props.alignment : 'left'};
 `;
 
-const Description = styled(LabelRegularBodyBlack)`
-    color: ${props => props.theme.color};
-    text-align: ${props => props.theme.alignment};
+const Description = styled(LabelSailecRegular)`
+    color: ${props => props.desc_color ? props.desc_color : COLOR.secondary};
+    font-size: ${SIZE.body};
+    text-align: ${props => props.alignment ? props.alignment : 'left'};
 `;
-
-Description.defaultProps = {
-    theme: {
-        color: COLOR.secondary,
-        alignment: 'left'
-    }
-}
 
 
 const IconTexts = (props) => {
-
-    const theme = {
-        color: props.color ? props.color : COLOR.secondary,
-        alignment: props.centered ? 'center' : 'left'
-    }
-
     return (
         <div>
-            <Icon src={props.ic_path}></Icon>
-
-            <ThemeProvider theme={theme}>
-                <Title>{props.title}</Title>
-            </ThemeProvider>
-
-            <ThemeProvider theme={theme}>
-                <Description>{props.desc}</Description>
-            </ThemeProvider>
+            <Icon src={props.ic_path}/>
+            <Title 
+                title_color={props.color}
+                alignment={props.alignment}>
+                    {props.title}
+            </Title>
+            <Description 
+                desc_color={props.color}
+                alignment={props.alignment}>
+                {props.desc}
+            </Description>
         </div>
     );
 }
@@ -54,7 +45,7 @@ IconTexts.propTypes = {
     title: PropTypes.string,
     desc: PropTypes.string,
     color: PropTypes.string,
-    centered: PropTypes.bool
+    alignment: PropTypes.string
 }
 
 export default IconTexts;
