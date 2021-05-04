@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const LabelSailecRegular = styled.p`
     font-family: 'Sailec Regular';
+    line-height: 2.2em;
 `;
 
 const LabelSailecMedium = styled.p`

@@ -3,16 +3,18 @@ import ReactDOM from 'react-dom';
 import Header from './components/organism/header/header.jsx';
 import Feet from './components/organism/footer/footer.jsx';
 import BodyIndex from './components/templates/bodyindex/bodyindex.jsx';
+import { Root } from './utils/global.js';
 import { 
     FontSailecRegular, 
     FontSailecMedium, 
     FontSailecBold, 
     FontSailecLight, 
     FontHarmonyRegular, 
-    FontHarmonyLite } from './fonts/fonts.js'
+    FontHarmonyLite } from './fonts/fonts.js';
 
 const elements = (
     <div>
+        <Root/>
         <FontSailecRegular/>
         <FontSailecMedium/>
         <FontSailecBold/>

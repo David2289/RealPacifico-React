@@ -16,7 +16,7 @@ const Burger = styled.img`
     position: relative;
 `;
 const logo_path = require('../../../images/ic_logo_black.svg');
-const logo_dom = <a className='brand-logo' href='#'><Logo src={logo_path}></Logo></a>
+const logo_dom = <a href='#'><Logo src={logo_path}></Logo></a>
 const burger_path = require('../../../images/ic_burger.svg');
 const burger_dom = <Burger src={burger_path}></Burger>;
 

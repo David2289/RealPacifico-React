@@ -21,9 +21,14 @@ const path_mobile = require('../../../images/ic_mobile.svg');
 const current_year = new Date().getFullYear();
 const copyright_label = "Copyright \xA9" + current_year.toString() + " Todos los derechos reservados";
 
+const List = styled.ul`
+    li {
+        margin-bottom: 20px;
+    }
+`;
 
 const links = 
-<ul className='list_separation_20'>
+<List>
     <li>
         <TextButton 
             href={url_wapp}
@@ -64,7 +69,7 @@ const links =
                 947670628
         </TextButton>
     </li>
-</ul>;
+</List>;
 
 
 const FooterStyled = styled(Footer)`
