@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Container, Row, Col, Parallax } from 'react-materialize';
 import { COLOR, SCREEN_MEDIA } from '../../../utils/constants.js';
+import Content from '../../atoms/content.jsx'
 import Slider from '../../organism/slider/slider.jsx'
 import TitleSect from '../../atoms/titlesect.jsx';
 import Description from '../../atoms/description.jsx';
@@ -79,12 +80,12 @@ const BodyIndex = () => {
                         <img className='responsive-img' src={path_img_15}/>
                     </Col>
                     <Col s={12} m={6}>
-                        <div>
+                        <Content margin='0px 30px'>
                             <TitleSect>Nosotros</TitleSect>
                             <Description margin='30px 0px'>
                                 El colegio Real Pacífico, con alto nivel de enseñanza y altas expectativas de rendimiento académico. Nuestros alumnos egresan preparados para aprobar el examen e ingresar a la universidad.
                             </Description>
-                        </div>
+                        </Content>
                     </Col>
                 </RowStyled>
             </Container>
