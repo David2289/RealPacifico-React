@@ -48,6 +48,12 @@ const ParallaxStyled = styled(Parallax)`
         background: ${COLOR.secondary};
         opacity: 0.6;
     }
+    @media only screen and ${SCREEN_MEDIA.small} {
+        height: 900px;
+    }
+    @media only screen and ${SCREEN_MEDIA.medium} {
+        height: 600px;
+    }
 `;
 
 const ParallaxBody = styled(Container)`
@@ -104,7 +110,8 @@ const BodyIndex = () => {
                                     ic_path={path_ic_initial} 
                                     desc='Inicial' 
                                     color={COLOR.white} 
-                                    alignment='center'>
+                                    alignment='center'
+                                    margin='30px 0px'>
                                 </IconTexts>
                             </Col>
                             <Col s={12} m={6} l={3} xl={3}>
@@ -112,7 +119,8 @@ const BodyIndex = () => {
                                     ic_path={path_ic_primary} 
                                     desc='Primaria' 
                                     color={COLOR.white} 
-                                    alignment='center'>
+                                    alignment='center'
+                                    margin='30px 0px'>
                                 </IconTexts>
                             </Col>
                             <Col s={12} m={6} l={3} xl={3}>
@@ -120,7 +128,8 @@ const BodyIndex = () => {
                                     ic_path={path_ic_highschool} 
                                     desc='Secundaria' 
                                     color={COLOR.white} 
-                                    alignment='center'>
+                                    alignment='center'
+                                    margin='30px 0px'>
                                 </IconTexts>
                             </Col>
                             <Col s={12} m={6} l={3} xl={3}>
@@ -128,7 +137,8 @@ const BodyIndex = () => {
                                     ic_path={path_ic_system5} 
                                     desc='Sistema 5º año' 
                                     color={COLOR.white} 
-                                    alignment='center'>
+                                    alignment='center'
+                                    margin='30px 0px'>
                                 </IconTexts>
                             </Col>
                         </RowStyled>

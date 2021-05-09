@@ -5,6 +5,11 @@ import { COLOR, SIZE } from '../../utils/constants.js';
 import { LabelSailecBold, LabelSailecRegular } from '../atoms/label.jsx';
 
 
+const Content = styled.div`
+    margin: ${props => props.margin ? props.margin : '0 0'};
+    padding: ${props => props.padding ? props.padding : '0 0'};
+`;
+
 const Icon = styled.img`
     height: '60px';
 `;
@@ -24,7 +29,7 @@ const Description = styled(LabelSailecRegular)`
 
 const IconTexts = (props) => {
     return (
-        <div>
+        <Content margin={props.margin} padding={props.padding}>
             <Icon src={props.ic_path}/>
             <Title 
                 title_color={props.color}
@@ -36,7 +41,7 @@ const IconTexts = (props) => {
                 alignment={props.alignment}>
                 {props.desc}
             </Description>
-        </div>
+        </Content>
     );
 }
 
@@ -45,7 +50,9 @@ IconTexts.propTypes = {
     title: PropTypes.string,
     desc: PropTypes.string,
     color: PropTypes.string,
-    alignment: PropTypes.string
+    alignment: PropTypes.string,
+    margin: PropTypes.string,
+    padding: PropTypes.string
 }
 
 export default IconTexts;
