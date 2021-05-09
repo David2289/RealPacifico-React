@@ -49,32 +49,35 @@ const NavbarStyled = styled(Navbar)`
 `;
 
 const Header = () => (
-    <NavbarStyled 
-        alignLinks='right'
-        brand={logo_dom}
-        menuIcon={burger_dom}>
+    <div className='navbar-fixed'>
+        <NavbarStyled 
+            alignLinks='right'
+            brand={logo_dom}
+            menuIcon={burger_dom}>
 
-        <NavItemStyled>
-            <LabelMediumBodySecondary>Inicio</LabelMediumBodySecondary>
-        </NavItemStyled>
+            <NavItemStyled>
+                <LabelMediumBodySecondary>Inicio</LabelMediumBodySecondary>
+            </NavItemStyled>
 
-        <NavItemStyled>
-            <LabelMediumBodySecondary>Matrícula 2021</LabelMediumBodySecondary>
-        </NavItemStyled>
+            <NavItemStyled>
+                <LabelMediumBodySecondary>Matrícula 2021</LabelMediumBodySecondary>
+            </NavItemStyled>
 
-        <NavItemStyled>
-            <LabelMediumBodySecondary>Nosotros</LabelMediumBodySecondary>
-        </NavItemStyled>
+            <NavItemStyled>
+                <LabelMediumBodySecondary>Nosotros</LabelMediumBodySecondary>
+            </NavItemStyled>
 
-        <NavItemStyled>
-            <LabelMediumBodySecondary>Nuestra Propuesta</LabelMediumBodySecondary>
-        </NavItemStyled>
+            <NavItemStyled>
+                <LabelMediumBodySecondary>Nuestra Propuesta</LabelMediumBodySecondary>
+            </NavItemStyled>
 
-        <NavItemStyled>
-            <LabelMediumBodySecondary>Contáctanos</LabelMediumBodySecondary>
-        </NavItemStyled>
+            <NavItemStyled>
+                <LabelMediumBodySecondary>Contáctanos</LabelMediumBodySecondary>
+            </NavItemStyled>
 
-    </NavbarStyled>
+        </NavbarStyled>
+    </div>
+    
 );
 
 export default Header;
