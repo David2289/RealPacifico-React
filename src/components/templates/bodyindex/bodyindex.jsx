@@ -2,10 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { Container, Row, Col, Parallax } from 'react-materialize';
 import { COLOR, SCREEN_MEDIA } from '../../../utils/constants.js';
-import Content from '../../atoms/content.jsx'
-import Slider from '../../organism/slider/slider.jsx'
+import Slider from '../../organism/slider/slider.jsx';
+import SectInfo from '../../organism/sectinfo/sectinfo.jsx';
 import TitleSect from '../../atoms/titlesect.jsx';
-import Description from '../../atoms/description.jsx';
 import IconTexts from '../../molecules/icon_texts.jsx';
 
 const path_classroom_img = require('../../../images/img_6.jpg');
@@ -70,7 +69,9 @@ const ParallaxBody = styled(Container)`
 const BodyIndex = () => {
     return (
         <div>
-            <Slider showBubble={true}></Slider>
+            <Slider 
+                showBubble={true}
+                />
 
             <Container>
                 <RowStyled>
@@ -80,20 +81,14 @@ const BodyIndex = () => {
                         </a>
                     </Col>
                 </RowStyled>
-                
-                <RowStyled className='valign-wrapper'>
-                    <Col s={12} m={6}>
-                        <img className='responsive-img' src={path_img_15}/>
-                    </Col>
-                    <Col s={12} m={6}>
-                        <Content margin='0px 30px'>
-                            <TitleSect>Nosotros</TitleSect>
-                            <Description margin='30px 0px'>
-                                El colegio Real Pacífico, con alto nivel de enseñanza y altas expectativas de rendimiento académico. Nuestros alumnos egresan preparados para aprobar el examen e ingresar a la universidad.
-                            </Description>
-                        </Content>
-                    </Col>
-                </RowStyled>
+
+                <SectInfo
+                    margin='80px 0'
+                    img_path={path_img_15}
+                    img_right={false}
+                    title='Nosotros'
+                    desc='El colegio Real Pacífico, con alto nivel de enseñanza y altas expectativas de rendimiento académico. Nuestros alumnos egresan preparados para aprobar el examen e ingresar a la universidad.'
+                    />
             </Container>
 
             <ParallaxStyled
