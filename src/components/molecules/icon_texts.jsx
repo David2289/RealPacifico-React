@@ -11,13 +11,16 @@ const Content = styled.div`
 `;
 
 const Icon = styled.img`
-    height: '60px';
+    height: ${props => props.height ? props.height : '35px'};
+    display: block;
+    margin: ${props => props.alignment && props.alignment == 'center' ? 'auto' : 'none'};
 `;
 
 const Title = styled(LabelSailecBold)`
     color: ${props => props.title_color ? props.title_color : COLOR.secondary};
-    font-size: ${SIZE.body};
+    font-size: ${SIZE.headline};
     text-align: ${props => props.alignment ? props.alignment : 'left'};
+    margin-top: 10px;
 `;
 
 const Description = styled(LabelSailecRegular)`
@@ -30,7 +33,11 @@ const Description = styled(LabelSailecRegular)`
 const IconTexts = (props) => {
     return (
         <Content margin={props.margin} padding={props.padding}>
-            <Icon src={props.ic_path}/>
+            <Icon 
+                src={props.ic_path} 
+                height={props.ic_height}
+                alignment={props.alignment}
+                />
             <Title 
                 title_color={props.color}
                 alignment={props.alignment}>
@@ -47,6 +54,7 @@ const IconTexts = (props) => {
 
 IconTexts.propTypes = {
     ic_path: PropTypes.string.isRequired,
+    ic_height: PropTypes.string,
     title: PropTypes.string,
     desc: PropTypes.string,
     color: PropTypes.string,

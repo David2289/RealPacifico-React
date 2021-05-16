@@ -15,6 +15,8 @@ const path_ic_initial = require('../../../images/ic_initial.svg');
 const path_ic_primary = require('../../../images/ic_primary.svg');
 const path_ic_highschool = require('../../../images/ic_highschool.svg');
 const path_ic_system5 = require('../../../images/ic_system5.svg');
+const path_ic_atom = require('../../../images/ic_atom.svg');
+const path_ic_heart = require('../../../images/ic_heart.svg');
 
 const RowStyled = styled(Row)`
     margin: 80px 0; // default row margin
@@ -58,12 +60,6 @@ const ParallaxStyled = styled(Parallax)`
 const ParallaxBody = styled(Container)`
     position: relative;
     z-index: 1;
-    img {
-        margin: auto;
-        display: block;
-        margin-bottom: 15px;
-        max-height: 35px;
-    }
 `;
 
 const BodyIndex = () => {
@@ -103,6 +99,7 @@ const BodyIndex = () => {
                             <Col s={12} m={6} l={3} xl={3}>
                                 <IconTexts 
                                     ic_path={path_ic_initial} 
+                                    ic_height='35px'
                                     desc='Inicial' 
                                     color={COLOR.white} 
                                     alignment='center'
@@ -112,6 +109,7 @@ const BodyIndex = () => {
                             <Col s={12} m={6} l={3} xl={3}>
                                 <IconTexts 
                                     ic_path={path_ic_primary} 
+                                    ic_height='35px'
                                     desc='Primaria' 
                                     color={COLOR.white} 
                                     alignment='center'
@@ -121,6 +119,7 @@ const BodyIndex = () => {
                             <Col s={12} m={6} l={3} xl={3}>
                                 <IconTexts 
                                     ic_path={path_ic_highschool} 
+                                    ic_height='35px'
                                     desc='Secundaria' 
                                     color={COLOR.white} 
                                     alignment='center'
@@ -130,6 +129,7 @@ const BodyIndex = () => {
                             <Col s={12} m={6} l={3} xl={3}>
                                 <IconTexts 
                                     ic_path={path_ic_system5} 
+                                    ic_height='35px'
                                     desc='Sistema 5º año' 
                                     color={COLOR.white} 
                                     alignment='center'
@@ -140,6 +140,32 @@ const BodyIndex = () => {
                     </ParallaxBody>
                 }
             />
+
+            <Container>
+                <RowStyled>
+                    <Col s={12} m={12} l={6} xl={6}>
+                        <IconTexts 
+                            ic_path={path_ic_atom} 
+                            ic_height='60px'
+                            title='20+'
+                            desc='Años de Experiencia' 
+                            color={COLOR.black} 
+                            alignment='center'
+                            margin='30px 0px'/>
+                    </Col>
+
+                    <Col s={12} m={12} l={6} xl={6}>
+                        <IconTexts 
+                            ic_path={path_ic_heart} 
+                            ic_height='60px'
+                            title='1000'
+                            desc='Ingresantes a la universidad' 
+                            color={COLOR.black} 
+                            alignment='center'
+                            margin='30px 0px'/>
+                    </Col>
+                </RowStyled>
+            </Container>
             
         </div>
     );
