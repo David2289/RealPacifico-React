@@ -7,16 +7,15 @@ import SectInfo from '../../organism/sectinfo/sectinfo.jsx';
 import TitleSect from '../../atoms/titlesect.jsx';
 import IconTexts from '../../molecules/icon_texts.jsx';
 
+import PathIcHeart from '../../../images/ic_heart.svg';
+import PathIcAtom from '../../../images/ic_atom.svg';
+import PathIcInitial from '../../../images/ic_edu_initial.svg';
+import PathIcNotebook from '../../../images/ic_edu_notebook.svg';
+import PathIcGraduation from '../../../images/ic_edu_graduation.svg';
+
 const path_classroom_img = require('../../../images/img_6.jpg');
 const path_img_15 = require('../../../images/img_15.jpg');
 const path_img_13 = require('../../../images/img_13.jpg');
-
-const path_ic_initial = require('../../../images/ic_initial.svg');
-const path_ic_primary = require('../../../images/ic_primary.svg');
-const path_ic_highschool = require('../../../images/ic_highschool.svg');
-const path_ic_system5 = require('../../../images/ic_system5.svg');
-const path_ic_atom = require('../../../images/ic_atom.svg');
-const path_ic_heart = require('../../../images/ic_heart.svg');
 
 const RowStyled = styled(Row)`
     margin: 80px 0; // default row margin
@@ -98,8 +97,9 @@ const BodyIndex = () => {
                         <RowStyled>
                             <Col s={12} m={6} l={3} xl={3}>
                                 <IconTexts 
-                                    ic_path={path_ic_initial} 
+                                    ic_path={PathIcInitial} 
                                     ic_height='35px'
+                                    ic_color={COLOR.white}
                                     desc='Inicial' 
                                     color={COLOR.white} 
                                     alignment='center'
@@ -108,8 +108,9 @@ const BodyIndex = () => {
                             </Col>
                             <Col s={12} m={6} l={3} xl={3}>
                                 <IconTexts 
-                                    ic_path={path_ic_primary} 
+                                    ic_path={PathIcNotebook} 
                                     ic_height='35px'
+                                    ic_color={COLOR.white}
                                     desc='Primaria' 
                                     color={COLOR.white} 
                                     alignment='center'
@@ -118,8 +119,9 @@ const BodyIndex = () => {
                             </Col>
                             <Col s={12} m={6} l={3} xl={3}>
                                 <IconTexts 
-                                    ic_path={path_ic_highschool} 
+                                    ic_path={PathIcAtom} 
                                     ic_height='35px'
+                                    ic_color={COLOR.white}
                                     desc='Secundaria' 
                                     color={COLOR.white} 
                                     alignment='center'
@@ -128,8 +130,9 @@ const BodyIndex = () => {
                             </Col>
                             <Col s={12} m={6} l={3} xl={3}>
                                 <IconTexts 
-                                    ic_path={path_ic_system5} 
+                                    ic_path={PathIcGraduation} 
                                     ic_height='35px'
+                                    ic_color={COLOR.white}
                                     desc='Sistema 5º año' 
                                     color={COLOR.white} 
                                     alignment='center'
@@ -145,8 +148,9 @@ const BodyIndex = () => {
                 <RowStyled>
                     <Col s={12} m={12} l={6} xl={6}>
                         <IconTexts 
-                            ic_path={path_ic_atom} 
+                            ic_path={PathIcAtom} 
                             ic_height='60px'
+                            ic_color={COLOR.primaryDark}
                             title='20+'
                             desc='Años de Experiencia' 
                             color={COLOR.black} 
@@ -156,8 +160,9 @@ const BodyIndex = () => {
 
                     <Col s={12} m={12} l={6} xl={6}>
                         <IconTexts 
-                            ic_path={path_ic_heart} 
+                            ic_path={PathIcHeart} 
                             ic_height='60px'
+                            ic_color={COLOR.primaryDark}
                             title='1000'
                             desc='Ingresantes a la universidad' 
                             color={COLOR.black} 

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import SVG from 'react-inlinesvg';
 import { COLOR, SIZE } from '../../utils/constants.js';
 import { LabelSailecBold, LabelSailecRegular } from '../atoms/label.jsx';
 
@@ -10,8 +11,9 @@ const Content = styled.div`
     padding: ${props => props.padding ? props.padding : '0 0'};
 `;
 
-const Icon = styled.img`
+const SVGStyled = styled(SVG)`
     height: ${props => props.height ? props.height : '35px'};
+    fill: ${props => props.ic_color ? props.ic_color : COLOR.black};
     display: block;
     margin: ${props => props.alignment && props.alignment == 'center' ? 'auto' : 'none'};
 `;
@@ -33,9 +35,10 @@ const Description = styled(LabelSailecRegular)`
 const IconTexts = (props) => {
     return (
         <Content margin={props.margin} padding={props.padding}>
-            <Icon 
-                src={props.ic_path} 
+            <SVGStyled 
+                src={props.ic_path}
                 height={props.ic_height}
+                ic_color={props.ic_color}
                 alignment={props.alignment}
                 />
             <Title 
@@ -55,6 +58,7 @@ const IconTexts = (props) => {
 IconTexts.propTypes = {
     ic_path: PropTypes.string.isRequired,
     ic_height: PropTypes.string,
+    ic_color: PropTypes.string,
     title: PropTypes.string,
     desc: PropTypes.string,
     color: PropTypes.string,
