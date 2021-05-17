@@ -7,16 +7,16 @@ import styled from 'styled-components';
 
 
 const path_bg = require('../../../images/img_5.jpg');
-const path_logo = require('../../../images/ic_logo_white.svg');
+const path_logo = require('../../../icons/ic_logo_white.svg');
 
 const url_wapp = "https://api.whatsapp.com/send/?phone=51901617680&text=Deseo+obtener+información&app_absent=0";
 const url_fb = "https://www.facebook.com/pg/colegiorealpacifico/";
 const url_insta = "https://www.instagram.com/colegiorealpacifico/";
-const path_wapp = require('../../../images/ic_wapp.svg');
-const path_fb = require('../../../images/ic_fb.svg');
-const path_insta = require('../../../images/ic_insta.svg');
-const path_landline = require('../../../images/ic_landline.svg');
-const path_mobile = require('../../../images/ic_mobile.svg');
+const path_wapp = require('../../../icons/ic_wapp.svg');
+const path_fb = require('../../../icons/ic_fb.svg');
+const path_insta = require('../../../icons/ic_insta.svg');
+const path_landline = require('../../../icons/ic_landline.svg');
+const path_mobile = require('../../../icons/ic_mobile.svg');
 
 const current_year = new Date().getFullYear();
 const copyright_label = "Copyright \xA9" + current_year.toString() + " Todos los derechos reservados";

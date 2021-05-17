@@ -7,11 +7,11 @@ import SectInfo from '../../organism/sectinfo/sectinfo.jsx';
 import TitleSect from '../../atoms/titlesect.jsx';
 import IconTexts from '../../molecules/icon_texts.jsx';
 
-import PathIcHeart from '../../../images/ic_heart.svg';
-import PathIcAtom from '../../../images/ic_atom.svg';
-import PathIcInitial from '../../../images/ic_edu_initial.svg';
-import PathIcNotebook from '../../../images/ic_edu_notebook.svg';
-import PathIcGraduation from '../../../images/ic_edu_graduation.svg';
+import PathIcHeart from '../../../icons/ic_heart.svg';
+import PathIcAtom from '../../../icons/ic_atom.svg';
+import PathIcInitial from '../../../icons/ic_edu_initial.svg';
+import PathIcNotebook from '../../../icons/ic_edu_notebook.svg';
+import PathIcGraduation from '../../../icons/ic_edu_graduation.svg';
 
 const path_classroom_img = require('../../../images/img_6.jpg');
 const path_img_15 = require('../../../images/img_15.jpg');

@@ -15,9 +15,9 @@ const Burger = styled.img`
     width: 20px;
     position: relative;
 `;
-const logo_path = require('../../../images/ic_logo_black.svg');
+const logo_path = require('../../../icons/ic_logo_black.svg');
 const logo_dom = <a href='#'><Logo src={logo_path}></Logo></a>
-const burger_path = require('../../../images/ic_burger.svg');
+const burger_path = require('../../../icons/ic_burger.svg');
 const burger_dom = <Burger src={burger_path}></Burger>;
 
 const LabelMediumBodySecondary = styled(LabelSailecMedium)`
