@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import SVG from 'react-inlinesvg';
 import { COLOR, SIZE } from '../../utils/constants.js';
 import { LabelSailecBold, LabelSailecRegular } from '../atoms/label.jsx';
+
+import CountUp from 'react-countup';
+import VisibilitySensor from 'react-visibility-sensor';
 
 
 const Content = styled.div`
@@ -31,28 +34,72 @@ const Description = styled(LabelSailecRegular)`
     text-align: ${props => props.alignment ? props.alignment : 'left'};
 `;
 
+function isNumeric(num) {
+    return !isNaN(num)
+}
+
 
 const IconTexts = (props) => {
-    return (
-        <Content margin={props.margin} padding={props.padding}>
-            <SVGStyled 
-                src={props.ic_path}
-                height={props.ic_height}
-                ic_color={props.ic_color}
-                alignment={props.alignment}
-                />
-            <Title 
-                title_color={props.color}
-                alignment={props.alignment}>
-                    {props.title}
-            </Title>
-            <Description 
-                desc_color={props.color}
-                alignment={props.alignment}>
-                {props.desc}
-            </Description>
-        </Content>
-    );
+    
+    const [state, setState] = useState(true);
+    
+    if (isNumeric(props.title)) {
+        return (
+            <Content margin={props.margin} padding={props.padding}>
+                <SVGStyled 
+                    src={props.ic_path}
+                    height={props.ic_height}
+                    ic_color={props.ic_color}
+                    alignment={props.alignment}
+                    />
+                <CountUp 
+                    start={0} 
+                    end={props.title}
+                    suffix={props.suffix}
+                    redraw={true}
+                    onEnd={() => {setState(false)}}
+                    >
+                    {({ countUpRef, start }) => (
+                        <VisibilitySensor active={state} onChange={start} delayedCall>
+                            {({isVisible}) => 
+                                <Title 
+                                ref={countUpRef}
+                                title_color={props.color}
+                                alignment={props.alignment} />
+                            }
+                        </VisibilitySensor>
+                    )}
+                </CountUp>
+                <Description 
+                    desc_color={props.color}
+                    alignment={props.alignment}>
+                    {props.desc}
+                </Description>
+            </Content>
+        );
+    }
+    else {
+        return (
+            <Content margin={props.margin} padding={props.padding}>
+                <SVGStyled 
+                    src={props.ic_path}
+                    height={props.ic_height}
+                    ic_color={props.ic_color}
+                    alignment={props.alignment}
+                    />
+                <Title 
+                    title_color={props.color}
+                    alignment={props.alignment}>
+                        {props.title}
+                </Title>
+                <Description 
+                    desc_color={props.color}
+                    alignment={props.alignment}>
+                    {props.desc}
+                </Description>
+            </Content>
+        );
+    }
 }
 
 IconTexts.propTypes = {
@@ -60,6 +107,7 @@ IconTexts.propTypes = {
     ic_height: PropTypes.string,
     ic_color: PropTypes.string,
     title: PropTypes.string,
+    suffix: PropTypes.string,
     desc: PropTypes.string,
     color: PropTypes.string,
     alignment: PropTypes.string,

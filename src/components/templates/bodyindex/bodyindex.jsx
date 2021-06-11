@@ -151,7 +151,8 @@ const BodyIndex = () => {
                             ic_path={PathIcAtom} 
                             ic_height='60px'
                             ic_color={COLOR.primaryDark}
-                            title='20+'
+                            title='20'
+                            suffix='+'
                             desc='Años de Experiencia' 
                             color={COLOR.black} 
                             alignment='center'
