@@ -54,7 +54,7 @@ const IconTexts = (props) => {
                     />
                 <CountUp 
                     start={0} 
-                    end={props.title}
+                    end={parseInt(props.title)}
                     suffix={props.suffix}
                     redraw={true}
                     onEnd={() => {setState(false)}}
