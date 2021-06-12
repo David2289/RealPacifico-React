@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './components/organism/header/header.jsx';
 import Feet from './components/organism/footer/footer.jsx';
 import BodyIndex from './components/templates/bodyindex/bodyindex.jsx';
+import BodyUs from './components/templates/bodyus/bodyus.jsx';
 import { Root } from './utils/global.js';
 import { 
     FontSailecRegular, 
@@ -22,9 +24,18 @@ const elements = (
         <FontHarmonyRegular/>
         <FontHarmonyLite/>
         
-        <Header></Header>
-        <BodyIndex></BodyIndex>
-        <Feet></Feet>
+        <Header/>
+        <Router>
+            <Switch>
+                <Route exact path='/'>
+                    <BodyIndex/>
+                </Route>
+                <Route path='/nosotros'>
+                    <BodyUs/>
+                </Route>
+            </Switch>
+        </Router>
+        <Feet/>
     </div>
 );
 

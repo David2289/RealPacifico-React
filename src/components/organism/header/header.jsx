@@ -63,7 +63,8 @@ const Header = () => (
                 <LabelMediumBodySecondary>Matrícula 2021</LabelMediumBodySecondary>
             </NavItemStyled>
 
-            <NavItemStyled>
+            <NavItemStyled
+                href='/nosotros'>
                 <LabelMediumBodySecondary>Nosotros</LabelMediumBodySecondary>
             </NavItemStyled>
 
