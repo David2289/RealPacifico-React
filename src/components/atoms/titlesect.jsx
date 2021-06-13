@@ -5,6 +5,10 @@ import { COLOR, SIZE } from '../../utils/constants.js'
 import { LabelSailecBold } from '../atoms/label.jsx'
 
 
+const Content = styled.div`
+    margin: ${props => props.margin ? props.margin : '0'};
+`;
+
 const TitleDisplay = styled(LabelSailecBold)`
     font-size: ${SIZE.display};
     color: ${props => props.title_color ? props.title_color : COLOR.secondary};
@@ -20,15 +24,17 @@ const Underline = styled.div`
 
 const TitleSect = (props) => {
     return (
-        <div>
+        <Content 
+            margin={props.margin}>
             <TitleDisplay title_color={props.color}>{props.children}</TitleDisplay>
             <Underline></Underline>
-        </div>
+        </Content>
     );
 }
 
 TitleSect.propTypes = {
-    color: PropTypes.string
+    color: PropTypes.string, 
+    margin: PropTypes.string,
 }
 
 export default TitleSect;

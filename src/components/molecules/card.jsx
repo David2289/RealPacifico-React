@@ -7,7 +7,7 @@ import IconTexts from './icon_texts.jsx';
 
 const Containter = styled.div`
     height: 340px;
-    border: 1px solid #EDEDED;
+    border: 1px solid ${COLOR.grayClear};
     padding: 20px;
     margin-top: 30px;
     @media only screen and ${SCREEN_MEDIA.small} {

@@ -8,7 +8,8 @@ const COLOR = {
     background: '#FFFFF6',
     white: '#FFFFFF',
     black: '#333333',
-    gray: '#777777'
+    gray: '#777777',
+    grayClear: '#EDEDED'
 }
 
 const SIZE = {
