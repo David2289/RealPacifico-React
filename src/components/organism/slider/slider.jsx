@@ -17,18 +17,18 @@ const SliderContent = styled.div`
 `;
 
 const BubbleContent = styled.div`
-    height:50px;
+    height: 50px;
     width: 120px;
-    margin:0 auto;
-    position:relative;
-    top:550px;
+    margin: 0 auto;
+    position: relative;
+    top: 550px;
     bottom: 0;
     z-index: 40;
     > div {
-        display:block;
-        height:20px;
-        width:40px;
-        float:left;
+        display: block;
+        height: 20px;
+        width: 40px;
+        float: left;
     }
 `;
 

@@ -29,7 +29,7 @@ const SCREEN_MEDIA = {
 }
 
 const LABEL = {
-    initial: 'Inicial',
+    initial: 'Inicio',
     us: 'Nosotros',
     contact: 'Contacto'
 }

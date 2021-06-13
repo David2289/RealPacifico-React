@@ -5,15 +5,11 @@ import { SIZE, COLOR } from '../../utils/constants.js';
 import { LabelSailecRegular } from '../atoms/label.jsx'
 
 
-const Root = styled.a`
-    color: ${COLOR.white}
-`;
-
 const IconContent = styled.div`
-    width: 26px;
-    height: 26px;
-    margin-left: 15px;
-    margin-right: 15px;
+    width: ${props => props.ic_size ? props.ic_size : '25px'};
+    height: ${props => props.ic_size ? props.ic_size : '25px'};
+    margin-left: ${props => props.separation ? props.separation : '15px'};
+    margin-right: ${props => props.separation ? props.separation : '15px'};
 `;
 
 const Icon = styled.img`
@@ -22,31 +18,42 @@ const Icon = styled.img`
     display: block;
 `;
 
-const LabelRegularBodyWhite = styled(LabelSailecRegular)`
-    font-size: ${SIZE.body};
-    color: ${COLOR.white};
-    margin-right: 15px;
+const LabelRegularBody = styled(LabelSailecRegular)`
+    font-size: ${props => props.title_size ? props.title_size : SIZE.body};
+    color: ${props => props.title_color ? props.title_color : COLOR.black};
+    margin-right: ${props => props.separation ? props.separation : '15px'};
 `;
 
 
 const TextButton = (props) => {
     return (
-        <Root 
+        <a 
             className='valign-wrapper'
             href={props.href}
             target={props.target}>
-            <IconContent>
-                <Icon src={props.ic_path}></Icon>
+            <IconContent
+                ic_size={props.ic_size}
+                separation={props.separation} >
+                <Icon src={props.ic_path}/>
             </IconContent>
-            <LabelRegularBodyWhite>{props.children}</LabelRegularBodyWhite>
-        </Root>
+            <LabelRegularBody
+                title_color={props.title_color}
+                title_size={props.title_size}
+                separation={props.separation} >
+                {props.children}
+            </LabelRegularBody>
+        </a>
     );
 }
 
 TextButton.propTypes = {
+    ic_path: PropTypes.string,
+    ic_size: PropTypes.string,
+    title_color: PropTypes.string,
+    title_size: PropTypes.string,
     href: PropTypes.string,
     target: PropTypes.string,
-    ic_path: PropTypes.string
+    separation: PropTypes.string
 }
 
 export default TextButton;

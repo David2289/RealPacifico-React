@@ -33,7 +33,8 @@ const links =
         <TextButton 
             href={url_wapp}
             target="_blank"
-            ic_path={path_wapp}>
+            ic_path={path_wapp}
+            title_color={COLOR.white}>
                 WhatsApp
         </TextButton>
     </li>
@@ -41,7 +42,8 @@ const links =
         <TextButton 
             href={url_fb}
             target="_blank"
-            ic_path={path_fb}>
+            ic_path={path_fb}
+            title_color={COLOR.white}>
                 Facebook
         </TextButton>
     </li>
@@ -49,7 +51,8 @@ const links =
         <TextButton 
             href={url_insta}
             target="_blank"
-            ic_path={path_insta}>
+            ic_path={path_insta}
+            title_color={COLOR.white}>
                 Instagram
         </TextButton>
     </li>
@@ -57,7 +60,8 @@ const links =
         <TextButton 
             href="#"
             target="_blank"
-            ic_path={path_landline}>
+            ic_path={path_landline}
+            title_color={COLOR.white}>
                 43-310620
         </TextButton>
     </li>
@@ -65,7 +69,8 @@ const links =
         <TextButton 
             href="#"
             target="_blank"
-            ic_path={path_mobile}>
+            ic_path={path_mobile}
+            title_color={COLOR.white}>
                 947670628
         </TextButton>
     </li>
@@ -105,8 +110,7 @@ const LogoContent = styled.div`
 const Feet = () => (
     <FooterStyled
         copyrights={copyright_label}
-        links={links}
-        >
+        links={links} >
         <LogoContent className='valign-wrapper'>
             <img src={path_logo} />
         </LogoContent>

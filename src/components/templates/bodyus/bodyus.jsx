@@ -1,8 +1,9 @@
 import React from 'react';
 import Banner from '../../organism/banner/banner.jsx';
 import styled from 'styled-components';
-import { Container, Row, Col, Parallax } from 'react-materialize';
+import { Container, Row, Col } from 'react-materialize';
 import { COLOR, LABEL } from '../../../utils/constants.js';
+import Path from '../../molecules/path.jsx';
 import TitleSect from '../../atoms/titlesect.jsx';
 import RowInfo from '../../organism/rowinfo/rowinfo.jsx';
 import Card from '../../molecules/card.jsx';
@@ -28,6 +29,12 @@ const BodyUs = () => {
                 title={LABEL.us}/>
 
             <Container>
+                <Row>
+                    <Path 
+                        endpoint={LABEL.us}
+                        margin='20px 0' />
+                </Row>
+
                 <RowInfo
                         margin='80px 0'
                         img_path={PathImg15}
