@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Container, Row, Col, Parallax } from 'react-materialize';
 import { COLOR, SCREEN_MEDIA } from '../../../utils/constants.js';
 import Slider from '../../organism/slider/slider.jsx';
-import SectInfo from '../../organism/sectinfo/sectinfo.jsx';
+import RowInfo from '../../organism/rowinfo/rowinfo.jsx';
 import TitleSect from '../../atoms/titlesect.jsx';
 import IconTexts from '../../molecules/icon_texts.jsx';
 
@@ -77,7 +77,7 @@ const BodyIndex = () => {
                     </Col>
                 </RowStyled>
 
-                <SectInfo
+                <RowInfo
                     margin='80px 0'
                     img_path={path_img_15}
                     img_right={false}

@@ -28,8 +28,15 @@ const SCREEN_MEDIA = {
     xlong: `(min-width: 1200px)`
 }
 
+const LABEL = {
+    initial: 'Inicial',
+    us: 'Nosotros',
+    contact: 'Contacto'
+}
+
 export {
     COLOR,
     SIZE,
-    SCREEN_MEDIA
+    SCREEN_MEDIA,
+    LABEL
 }

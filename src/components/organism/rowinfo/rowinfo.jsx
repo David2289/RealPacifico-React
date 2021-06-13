@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Container, Row, Col } from 'react-materialize';
-import { COLOR, SCREEN_MEDIA } from '../../../utils/constants.js';
+import { Row, Col } from 'react-materialize';
+import { SCREEN_MEDIA } from '../../../utils/constants.js';
 import Content from '../../atoms/content.jsx';
 import TitleSect from '../../atoms/titlesect.jsx';
 import Description from '../../atoms/description.jsx';
@@ -20,7 +20,7 @@ const RowStyled = styled(Row)`
     }
 `;
 
-const SectInfo = (props) => {
+const RowInfo = (props) => {
     if(props.img_right == true) {
         return (
             <RowStyled margin={props.margin} padding={props.padding}>
@@ -57,7 +57,7 @@ const SectInfo = (props) => {
     
 }
 
-SectInfo.propTypes = {
+RowInfo.propTypes = {
     img_path: PropTypes.string.isRequired,
     img_right: PropTypes.bool,
     title: PropTypes.string,
@@ -70,4 +70,4 @@ SectInfo.propTypes = {
     padding: PropTypes.string
 }
 
-export default SectInfo;
+export default RowInfo;
