@@ -55,7 +55,8 @@ const Header = () => (
             brand={logo_dom}
             menuIcon={burger_dom}>
 
-            <NavItemStyled>
+            <NavItemStyled
+                href='/'>
                 <LabelMediumBodySecondary>Inicio</LabelMediumBodySecondary>
             </NavItemStyled>
 
