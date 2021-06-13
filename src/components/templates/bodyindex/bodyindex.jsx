@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Container, Row, Col, Parallax } from 'react-materialize';
-import { COLOR, SCREEN_MEDIA } from '../../../utils/constants.js';
+import { COLOR, SIZE, SCREEN_MEDIA } from '../../../utils/constants.js';
 import Slider from '../../organism/slider/slider.jsx';
 import RowInfo from '../../organism/rowinfo/rowinfo.jsx';
 import TitleSect from '../../atoms/titlesect.jsx';
@@ -19,13 +19,6 @@ const path_img_13 = require('../../../images/img_13.jpg');
 
 const RowStyled = styled(Row)`
     margin: 80px 0; // default row margin
-    @media only screen and ${SCREEN_MEDIA.small} {
-        // When Row have valign-wrapper to center its content, the Grid break up and vertical alignment doesn't work.
-        // To solve it. Is neceasary to use display inherit:
-        .valign-wrapper {
-            display: inherit;
-        }
-    }
 `;
 
 const ParallaxStyled = styled(Parallax)`
@@ -100,8 +93,9 @@ const BodyIndex = () => {
                                     ic_path={PathIcInitial} 
                                     ic_height='35px'
                                     ic_color={COLOR.white}
-                                    desc='Inicial' 
-                                    color={COLOR.white} 
+                                    title='Inicial' 
+                                    title_size={SIZE.title}
+                                    title_color={COLOR.white} 
                                     alignment='center'
                                     margin='30px 0px'>
                                 </IconTexts>
@@ -111,8 +105,9 @@ const BodyIndex = () => {
                                     ic_path={PathIcNotebook} 
                                     ic_height='35px'
                                     ic_color={COLOR.white}
-                                    desc='Primaria' 
-                                    color={COLOR.white} 
+                                    title='Inicial' 
+                                    title_size={SIZE.title}
+                                    title_color={COLOR.white}
                                     alignment='center'
                                     margin='30px 0px'>
                                 </IconTexts>
@@ -122,8 +117,9 @@ const BodyIndex = () => {
                                     ic_path={PathIcAtom} 
                                     ic_height='35px'
                                     ic_color={COLOR.white}
-                                    desc='Secundaria' 
-                                    color={COLOR.white} 
+                                    title='Inicial' 
+                                    title_size={SIZE.title}
+                                    title_color={COLOR.white}
                                     alignment='center'
                                     margin='30px 0px'>
                                 </IconTexts>
@@ -133,8 +129,9 @@ const BodyIndex = () => {
                                     ic_path={PathIcGraduation} 
                                     ic_height='35px'
                                     ic_color={COLOR.white}
-                                    desc='Sistema 5º año' 
-                                    color={COLOR.white} 
+                                    title='Inicial' 
+                                    title_size={SIZE.title}
+                                    title_color={COLOR.white}
                                     alignment='center'
                                     margin='30px 0px'>
                                 </IconTexts>
@@ -154,7 +151,6 @@ const BodyIndex = () => {
                             title='20'
                             suffix='+'
                             desc='Años de Experiencia' 
-                            color={COLOR.black} 
                             alignment='center'
                             margin='30px 0px'/>
                     </Col>
@@ -166,7 +162,6 @@ const BodyIndex = () => {
                             ic_color={COLOR.primaryDark}
                             title='1000'
                             desc='Ingresantes a la universidad' 
-                            color={COLOR.black} 
                             alignment='center'
                             margin='30px 0px'/>
                     </Col>

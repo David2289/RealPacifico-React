@@ -23,15 +23,16 @@ const SVGStyled = styled(SVG)`
 
 const Title = styled(LabelSailecBold)`
     color: ${props => props.title_color ? props.title_color : COLOR.secondary};
-    font-size: ${SIZE.headline};
+    font-size: ${props => props.title_size ? props.title_size : SIZE.headline};
     text-align: ${props => props.alignment ? props.alignment : 'left'};
-    margin-top: 10px;
+    margin-top: ${props => props.separation ? props.separation : '10px'};
 `;
 
 const Description = styled(LabelSailecRegular)`
     color: ${props => props.desc_color ? props.desc_color : COLOR.secondary};
     font-size: ${SIZE.body};
     text-align: ${props => props.alignment ? props.alignment : 'left'};
+    margin-top: ${props => props.separation ? props.separation : '0px'};
 `;
 
 function isNumeric(num) {
@@ -64,15 +65,18 @@ const IconTexts = (props) => {
                             {({isVisible}) => 
                                 <Title 
                                 ref={countUpRef}
-                                title_color={props.color}
-                                alignment={props.alignment} />
+                                title_color={props.title_color}
+                                title_size={props.title_size}
+                                alignment={props.alignment}
+                                separation={props.separation} />
                             }
                         </VisibilitySensor>
                     )}
                 </CountUp>
                 <Description 
-                    desc_color={props.color}
-                    alignment={props.alignment}>
+                    desc_color={props.desc_color}
+                    alignment={props.alignment}
+                    separation={props.separation}>
                     {props.desc}
                 </Description>
             </Content>
@@ -88,13 +92,16 @@ const IconTexts = (props) => {
                     alignment={props.alignment}
                     />
                 <Title 
-                    title_color={props.color}
-                    alignment={props.alignment}>
+                    title_color={props.title_color}
+                    title_size={props.title_size}
+                    alignment={props.alignment}
+                    separation={props.separation}>
                         {props.title}
                 </Title>
                 <Description 
-                    desc_color={props.color}
-                    alignment={props.alignment}>
+                    desc_color={props.desc_color}
+                    alignment={props.alignment}
+                    separation={props.separation}>
                     {props.desc}
                 </Description>
             </Content>
@@ -107,9 +114,12 @@ IconTexts.propTypes = {
     ic_height: PropTypes.string,
     ic_color: PropTypes.string,
     title: PropTypes.string,
+    title_size: PropTypes.string,
+    title_color: PropTypes.string,
     suffix: PropTypes.string,
     desc: PropTypes.string,
-    color: PropTypes.string,
+    desc_color: PropTypes.string,
+    separation: PropTypes.string,
     alignment: PropTypes.string,
     margin: PropTypes.string,
     padding: PropTypes.string
