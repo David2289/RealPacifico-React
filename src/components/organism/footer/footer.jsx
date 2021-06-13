@@ -78,6 +78,7 @@ const links =
 
 
 const FooterStyled = styled(Footer)`
+    margin: 100px 0 0 0;
     background-image: url(${path_bg});
     // Cover and center background image: //
     background-position: 50% 50%; /*El cuadro ajustado se puede centrar horizontal y verticalmente*/
