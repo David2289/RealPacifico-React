@@ -3,7 +3,7 @@ import 'materialize-css';
 import styled from 'styled-components';
 import { Navbar, NavItem } from 'react-materialize';
 import { LabelSailecMedium } from '../../atoms/label.jsx';
-import { COLOR, SIZE, SCREEN_MEDIA } from '../../../utils/constants.js';
+import { COLOR, SIZE, SCREEN_MEDIA, LABEL } from '../../../utils/constants.js';
 
 
 const Logo = styled.img`
@@ -58,7 +58,7 @@ const Header = () => (
 
             <NavItemStyled
                 href='/'>
-                <LabelMediumBodySecondary>Inicio</LabelMediumBodySecondary>
+                <LabelMediumBodySecondary>{LABEL.initial}</LabelMediumBodySecondary>
             </NavItemStyled>
 
             <NavItemStyled>
@@ -67,15 +67,16 @@ const Header = () => (
 
             <NavItemStyled
                 href='/nosotros'>
-                <LabelMediumBodySecondary>Nosotros</LabelMediumBodySecondary>
+                <LabelMediumBodySecondary>{LABEL.us}</LabelMediumBodySecondary>
             </NavItemStyled>
 
             <NavItemStyled>
                 <LabelMediumBodySecondary>Nuestra Propuesta</LabelMediumBodySecondary>
             </NavItemStyled>
 
-            <NavItemStyled>
-                <LabelMediumBodySecondary>Contáctanos</LabelMediumBodySecondary>
+            <NavItemStyled
+                href='/contact'>
+                <LabelMediumBodySecondary>{LABEL.contact}</LabelMediumBodySecondary>
             </NavItemStyled>
 
         </NavbarStyled>

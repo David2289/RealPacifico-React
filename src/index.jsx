@@ -5,6 +5,7 @@ import Header from './components/organism/header/header.jsx';
 import Feet from './components/organism/footer/footer.jsx';
 import BodyIndex from './components/templates/bodyindex/bodyindex.jsx';
 import BodyUs from './components/templates/bodyus/bodyus.jsx';
+import BodyContact from './components/templates/bodycontact/bodycontact.jsx';
 import { Root } from './utils/global.js';
 import { 
     FontSailecRegular, 
@@ -32,6 +33,9 @@ const elements = (
                 </Route>
                 <Route path='/nosotros'>
                     <BodyUs/>
+                </Route>
+                <Route path='/contact'>
+                    <BodyContact/>
                 </Route>
             </Switch>
         </Router>

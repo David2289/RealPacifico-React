@@ -24,7 +24,7 @@ const Containter = styled.div`
 
 const Card = (props) => {
     return (
-        <Containter>
+        <Containter className='z-depth-3'>
             <IconTexts
                 ic_path={props.ic_path}
                 ic_color={COLOR.primaryDark}
