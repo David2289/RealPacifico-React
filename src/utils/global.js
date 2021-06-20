@@ -22,24 +22,34 @@ const Root = createGlobalStyle`
 
     // To change material Text Input
     .input-field.input-outlined {
-        > input {
-            color: ${COLOR.gray};
-            border: 2px solid ${COLOR.grayClear};
-            padding: 1px 16px 0px;
+        > input, .materialize-textarea {
+            border: 1px solid ${COLOR.grayClear};
+            padding: 0 16px;
+            background: ${COLOR.white};
+            // Avoid width overflow 
             width: 100%;
+            -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+            -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+            box-sizing: border-box;  
+            //
             float: none;
             display: block;
             border-radius: 4px;
-            transition: box-shadow, border-color 0.15s;
+            transition: box-shadow, border-color 0.25s;
             &:focus:not([readonly]) {
                 border-color: ${COLOR.gray};
-                box-shadow: 0 1px 0 0px ${COLOR.gray};
+                box-shadow: 0 0px 0 0 ${COLOR.gray}; //0 1px 0 0, for border 2px solid
             }
             &:focus:not([readonly]) + label {
-                color: ${COLOR.gray} !important;
+                color: ${COLOR.black} !important;
             }
         }
+        .materialize-textarea {
+            padding: 16px;
+            height: 200px;
+        }
         > label {
+            color: ${COLOR.gray};
             left: 27px;
             display: inline-flex;
             width: auto !important;

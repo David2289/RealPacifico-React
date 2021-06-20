@@ -7,7 +7,9 @@ const BodyContact = () => {
         <div>
             <Container>
                 <Row>
-                    <Col><Contact/></Col>
+                    <Col s={12} m={12} l={6} xl={6}>
+                        <Contact/>
+                    </Col>
                 </Row>
             </Container>
         </div>

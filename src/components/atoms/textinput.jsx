@@ -5,14 +5,15 @@ const TextInput = (props) => {
     return (
         <div className='input-field input-outlined'>
             <input 
-                id='last_name' 
-                type={props.type} 
-                placeholder={props.placeholder}/>
+                id={props.id} 
+                type={props.type}
+                placeholder={props.placeholder} />
         </div>
     );
 }
 
 TextInput.propTypes = {
+    id: PropTypes.string,
     type: PropTypes.string,
     placeholder: PropTypes.string
 }
