@@ -24,7 +24,7 @@ const Contact = () => {
                 margin='20px 0'/>
             <Button
                 type='submit'
-                margin='20px 0'>
+                margin='0 0 80px 0'>
                 Enviar
             </Button>
         </div>
