@@ -1,6 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import TitleSect from '../../atoms/titlesect.jsx';
 import TextInput from '../../atoms/textinput.jsx';
 import TextArea from '../../atoms/textarea.jsx';
 import Button from '../../atoms/button.jsx';
@@ -9,16 +8,23 @@ import Button from '../../atoms/button.jsx';
 const Contact = () => {
     return(
         <div>
+            <TitleSect>
+                Escríbenos
+            </TitleSect>
             <TextInput 
                 type='text' 
-                placeholder='Nombre'/>
+                placeholder='Nombre'
+                margin='40px 0 20px 0'/>
             <TextInput 
                 type='email' 
-                placeholder='Email'/>
+                placeholder='Email'
+                margin='20px 0'/>
             <TextArea 
-                placeholder='Mensaje' />
+                placeholder='Mensaje'
+                margin='20px 0'/>
             <Button
-                type="submit">
+                type='submit'
+                margin='20px 0'>
                 Enviar
             </Button>
         </div>

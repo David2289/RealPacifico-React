@@ -1,22 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
+const Content = styled.div`
+    margin: ${props => props.margin ? props.margin : '0 0'};
+`;
 
 const TextArea = (props) => {
     return (
-        <div className='input-field input-outlined'>
+        <Content 
+            className='input-field input-outlined'
+            margin={props.margin}>
             <textarea 
                 className='materialize-textarea'
                 id={props.id} 
                 placeholder={props.placeholder}
                 maxLength={props.length} />
-        </div>
+        </Content>
     );
 }
 
 TextArea.propTypes = {
     id: PropTypes.string,
     placeholder: PropTypes.string,
-    length: PropTypes.string
+    length: PropTypes.string, 
+    margin: PropTypes.string
 }
 
 export default TextArea;
