@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Textarea as MatTextArea } from 'react-materialize';
 
 const TextArea = (props) => {
     return (
