@@ -5,6 +5,9 @@ import { Navbar, NavItem } from 'react-materialize';
 import { LabelSailecMedium } from '../../atoms/label.jsx';
 import { COLOR, SIZE, SCREEN_MEDIA, LABEL } from '../../../utils/constants.js';
 
+import PathLogo from '../../../icons/ic_logo.svg';
+import PathBurger from '../../../icons/ic_burger.svg';
+
 
 const Logo = styled.img`
     height: 40px;
@@ -15,10 +18,9 @@ const Burger = styled.img`
     width: 20px;
     position: relative;
 `;
-const logo_path = require('../../../icons/ic_logo_black.svg');
-const logo_dom = <a href='/'><Logo src={logo_path}></Logo></a>
-const burger_path = require('../../../icons/ic_burger.svg');
-const burger_dom = <Burger src={burger_path}></Burger>;
+
+const logo_dom = <a href='/'><Logo src={PathLogo}></Logo></a>
+const burger_dom = <Burger src={PathBurger}></Burger>;
 
 const LabelMediumBodySecondary = styled(LabelSailecMedium)`
     font-size: ${SIZE.body};

@@ -1,13 +1,14 @@
 import React from 'react';
-import 'materialize-css';
+import styled from 'styled-components';
 import { Footer } from 'react-materialize';
 import { COLOR } from '../../../utils/constants.js';
 import TextButton from '../../atoms/textbutton.jsx';
-import styled from 'styled-components';
+import SVG from 'react-inlinesvg';
+
+import PathLogo from '../../../icons/ic_logo.svg';
 
 
 const path_bg = require('../../../images/img_5.jpg');
-const path_logo = require('../../../icons/ic_logo_white.svg');
 
 const url_wapp = "https://api.whatsapp.com/send/?phone=51901617680&text=Deseo+obtener+información&app_absent=0";
 const url_fb = "https://www.facebook.com/pg/colegiorealpacifico/";
@@ -20,6 +21,7 @@ const path_mobile = require('../../../icons/ic_mobile.svg');
 
 const current_year = new Date().getFullYear();
 const copyright_label = "Copyright \xA9" + current_year.toString() + " Todos los derechos reservados";
+
 
 const List = styled.ul`
     li {
@@ -102,10 +104,12 @@ const FooterStyled = styled(Footer)`
 
 const LogoContent = styled.div`
     margin: 20px 0 30px 0;
-    img {
-        width: 180px;
-        margin: auto;
-    }
+`;
+
+const Logo = styled(SVG)`
+    fill: ${COLOR.white};
+    margin: auto;
+    height: 150px;
 `;
 
 const Feet = () => (
@@ -113,7 +117,7 @@ const Feet = () => (
         copyrights={copyright_label}
         links={links} >
         <LogoContent className='valign-wrapper'>
-            <img src={path_logo} />
+            <Logo src={PathLogo} />
         </LogoContent>
     </FooterStyled>
 );
