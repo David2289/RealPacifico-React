@@ -10,6 +10,13 @@ const Containter = styled.div`
     border: 1px solid ${COLOR.grayClear};
     padding: 20px;
     margin-top: 30px;
+
+    box-shadow: 0 1px 2px rgba(0,0,0,0.02), 
+                0 2px 4px rgba(0,0,0,0.02), 
+                0 4px 8px rgba(0,0,0,0.02), 
+                0 8px 16px rgba(0,0,0,0.02),
+                0 16px 32px rgba(0,0,0,0.02);
+
     @media only screen and ${SCREEN_MEDIA.small} {
         height: 340px;
     }
@@ -24,7 +31,7 @@ const Containter = styled.div`
 
 const Card = (props) => {
     return (
-        <Containter className='z-depth-3'>
+        <Containter>
             <IconTexts
                 ic_path={props.ic_path}
                 ic_color={COLOR.primaryDark}
