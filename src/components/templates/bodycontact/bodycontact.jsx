@@ -2,11 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 import { Container, Row, Col } from 'react-materialize';
 import { LABEL } from '../../../utils/constants.js';
+import Card from '../../molecules/card.jsx';
 import Banner from '../../organism/banner/banner.jsx';
 import Path from '../../molecules/path.jsx';
 import Contact from '../../organism/contact/contact.jsx'
 
 import PathImg4 from '../../../images/img_4.jpg';
+import PathIcPhone from '../../../icons/ic_phone.svg';
+import PathIcGps from '../../../icons/ic_gps.svg';
+import PathIcMail from '../../../icons/ic_mail.svg';
 
 const MapContent = styled.div`
     position: relative;
@@ -43,6 +47,32 @@ const BodyContact = () => {
                                 allowFullScreen/>
                         </MapContent>
                         
+                    </Col>
+                </Row>
+                <Row>
+                    <Col s={12} m={12} l={4} xl={4}>
+                        <Card
+                            ic_path={PathIcPhone}
+                            title='Teléfonos'
+                            descs={['043-310640', '952904890', '902308286']}
+                            alignment='center'
+                            />
+                    </Col>
+                    <Col s={12} m={12} l={4} xl={4}>
+                        <Card
+                            ic_path={PathIcPhone}
+                            title='Teléfonos'
+                            descs={['043-310640', '952904890', '902308286']}
+                            alignment='center'
+                            />
+                    </Col>
+                    <Col s={12} m={12} l={4} xl={4}>
+                        <Card
+                            ic_path={PathIcPhone}
+                            title='Teléfonos'
+                            descs={['043-310640', '952904890', '902308286']}
+                            alignment='center'
+                            />
                     </Col>
                 </Row>
             </Container>
