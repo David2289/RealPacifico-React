@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import PropTypes, { string } from 'prop-types';
 import styled from 'styled-components';
 import { COLOR, SIZE, SCREEN_MEDIA } from '../../utils/constants.js';
 import IconTexts from './icon_texts.jsx';
@@ -38,7 +38,7 @@ const Card = (props) => {
                 ic_height='25px'
                 title={props.title}
                 title_size={SIZE.subtitle}
-                desc={props.desc}
+                descs={props.descs}
                 desc_color={COLOR.gray}
                 separation='15px' />
         </Containter>
@@ -48,7 +48,7 @@ const Card = (props) => {
 Card.propTypes = {
     ic_path: PropTypes.string.isRequired,
     title: PropTypes.string,
-    desc: PropTypes.string,
+    descs: PropTypes.arrayOf(string)
 }
 
 export default Card;

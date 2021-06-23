@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+import PropTypes, { string } from 'prop-types';
 import styled from 'styled-components';
 import SVG from 'react-inlinesvg';
 import { COLOR, SIZE } from '../../utils/constants.js';
@@ -35,6 +35,8 @@ const Description = styled(LabelSailecRegular)`
     margin-top: ${props => props.separation ? props.separation : '0px'};
 `;
 
+
+
 function isNumeric(num) {
     return !isNaN(num)
 }
@@ -43,6 +45,15 @@ function isNumeric(num) {
 const IconTexts = (props) => {
     
     const [state, setState] = useState(true);
+    const listDesc = props.descs?.map((desc) =>
+            <Description
+                desc_color={props.desc_color}
+                alignment={props.alignment}
+                separation={props.separation}>
+                {desc}
+            </Description>
+        );
+    
     
     if (isNumeric(props.title)) {
         return (
@@ -73,12 +84,7 @@ const IconTexts = (props) => {
                         </VisibilitySensor>
                     )}
                 </CountUp>
-                <Description 
-                    desc_color={props.desc_color}
-                    alignment={props.alignment}
-                    separation={props.separation}>
-                    {props.desc}
-                </Description>
+                {listDesc}
             </Content>
         );
     }
@@ -98,12 +104,7 @@ const IconTexts = (props) => {
                     separation={props.separation}>
                         {props.title}
                 </Title>
-                <Description 
-                    desc_color={props.desc_color}
-                    alignment={props.alignment}
-                    separation={props.separation}>
-                    {props.desc}
-                </Description>
+                {listDesc}
             </Content>
         );
     }
@@ -117,7 +118,7 @@ IconTexts.propTypes = {
     title_size: PropTypes.string,
     title_color: PropTypes.string,
     suffix: PropTypes.string,
-    desc: PropTypes.string,
+    descs: PropTypes.arrayOf(string),
     desc_color: PropTypes.string,
     separation: PropTypes.string,
     alignment: PropTypes.string,

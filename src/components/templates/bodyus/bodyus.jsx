@@ -51,19 +51,19 @@ const BodyUs = () => {
                         <Card
                             ic_path={PathIcHeart}
                             title='Amor al aprendizaje'
-                            desc='Aprender a aprender. El aprendizaje es "acción", si no hay acción, es sólo información.'/>
+                            descs={['Aprender a aprender. El aprendizaje es "acción", si no hay acción, es sólo información.']}/>
                     </Col>
                     <Col s={12} m={6} l={4} xl={4}>
                         <Card
                             ic_path={PathIcStar}
                             title='Respeto'
-                            desc='Aprenden a valorarse, reconocer y aceptar que somos diferentes, auténticos y legítimos.'/>
+                            descs={['Aprenden a valorarse, reconocer y aceptar que somos diferentes, auténticos y legítimos.']}/>
                     </Col>
                     <Col s={12} m={6} l={4} xl={4}>
                         <Card
                             ic_path={PathIcStar}
                             title='Respeto'
-                            desc='Aprenden a valorarse, reconocer y aceptar que somos diferentes, auténticos y legítimos.'/>
+                            descs={['Aprenden a valorarse, reconocer y aceptar que somos diferentes, auténticos y legítimos.']}/>
                     </Col>
                 </Row>
 
@@ -77,7 +77,7 @@ const BodyUs = () => {
                             ic_color={COLOR.primaryDark}
                             title='20'
                             suffix='+'
-                            desc='Años de experiencia'
+                            descs={['Años de experiencia']}
                             alignment='center'/>
                     </Col>
                     <Col s={12} m={6} l={6} xl={6}>
@@ -87,7 +87,7 @@ const BodyUs = () => {
                             ic_color={COLOR.primaryDark}
                             title='1000'
                             suffix='+'
-                            desc='Ingresantes a la universidad'
+                            descs={['Ingresantes a la universidad']}
                             alignment='center'/>
                     </Col>
                 </Row>

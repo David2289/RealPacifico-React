@@ -150,7 +150,7 @@ const BodyIndex = () => {
                             ic_color={COLOR.primaryDark}
                             title='20'
                             suffix='+'
-                            desc='Años de Experiencia' 
+                            descs={['Años de Experiencia']} 
                             alignment='center'
                             margin='30px 0px'/>
                     </Col>
@@ -161,7 +161,7 @@ const BodyIndex = () => {
                             ic_height='60px'
                             ic_color={COLOR.primaryDark}
                             title='1000'
-                            desc='Ingresantes a la universidad' 
+                            descs={['Ingresantes a la universidad']} 
                             alignment='center'
                             margin='30px 0px'/>
                     </Col>
