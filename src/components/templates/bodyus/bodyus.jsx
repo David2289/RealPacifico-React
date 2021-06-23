@@ -51,18 +51,21 @@ const BodyUs = () => {
                         <Card
                             ic_path={PathIcHeart}
                             title='Amor al aprendizaje'
+                            title_separation='20px'
                             descs={['Aprender a aprender. El aprendizaje es "acción", si no hay acción, es sólo información.']}/>
                     </Col>
                     <Col s={12} m={6} l={4} xl={4}>
                         <Card
                             ic_path={PathIcStar}
                             title='Respeto'
+                            title_separation='20px'
                             descs={['Aprenden a valorarse, reconocer y aceptar que somos diferentes, auténticos y legítimos.']}/>
                     </Col>
                     <Col s={12} m={6} l={4} xl={4}>
                         <Card
                             ic_path={PathIcStar}
                             title='Respeto'
+                            title_separation='20px'
                             descs={['Aprenden a valorarse, reconocer y aceptar que somos diferentes, auténticos y legítimos.']}/>
                     </Col>
                 </Row>

@@ -54,22 +54,25 @@ const BodyContact = () => {
                         <Card
                             ic_path={PathIcPhone}
                             title='Teléfonos'
+                            title_separation='15px'
                             descs={['043-310640', '952904890', '902308286']}
                             alignment='center'
                             />
                     </Col>
                     <Col s={12} m={12} l={4} xl={4}>
                         <Card
-                            ic_path={PathIcPhone}
-                            title='Teléfonos'
-                            descs={['043-310640', '952904890', '902308286']}
+                            ic_path={PathIcGps}
+                            title='Dirección'
+                            title_separation='15px'
+                            descs={['URB. JOSE CARLOS MARIATEGUI MZ R3', 'LOTE 20(2DO NIVEL). OVALO LA FAMILIA.', 'NUEVO CHIMBOTE']}
                             alignment='center'
                             />
                     </Col>
                     <Col s={12} m={12} l={4} xl={4}>
                         <Card
-                            ic_path={PathIcPhone}
-                            title='Teléfonos'
+                            ic_path={PathIcMail}
+                            title='Correos'
+                            title_separation='15px'
                             descs={['043-310640', '952904890', '902308286']}
                             alignment='center'
                             />

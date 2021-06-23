@@ -25,14 +25,14 @@ const Title = styled(LabelSailecBold)`
     color: ${props => props.title_color ? props.title_color : COLOR.secondary};
     font-size: ${props => props.title_size ? props.title_size : SIZE.headline};
     text-align: ${props => props.alignment ? props.alignment : 'left'};
-    margin-top: ${props => props.separation ? props.separation : '10px'};
+    margin-top: ${props => props.title_separation ? props.title_separation : '10px'};
 `;
 
 const Description = styled(LabelSailecRegular)`
     color: ${props => props.desc_color ? props.desc_color : COLOR.secondary};
     font-size: ${SIZE.body};
     text-align: ${props => props.alignment ? props.alignment : 'left'};
-    margin-top: ${props => props.separation ? props.separation : '0px'};
+    margin-top: ${props => props.desc_separation ? props.desc_separation : '0px'};
 `;
 
 
@@ -49,7 +49,7 @@ const IconTexts = (props) => {
             <Description
                 desc_color={props.desc_color}
                 alignment={props.alignment}
-                separation={props.separation}>
+                desc_separation={props.desc_separation}>
                 {desc}
             </Description>
         );
@@ -79,7 +79,7 @@ const IconTexts = (props) => {
                                 title_color={props.title_color}
                                 title_size={props.title_size}
                                 alignment={props.alignment}
-                                separation={props.separation} />
+                                title_separation={props.title_separation} />
                             }
                         </VisibilitySensor>
                     )}
@@ -101,7 +101,7 @@ const IconTexts = (props) => {
                     title_color={props.title_color}
                     title_size={props.title_size}
                     alignment={props.alignment}
-                    separation={props.separation}>
+                    title_separation={props.title_separation}>
                         {props.title}
                 </Title>
                 {listDesc}
@@ -117,10 +117,11 @@ IconTexts.propTypes = {
     title: PropTypes.string,
     title_size: PropTypes.string,
     title_color: PropTypes.string,
+    title_separation: PropTypes.string,
     suffix: PropTypes.string,
     descs: PropTypes.arrayOf(string),
     desc_color: PropTypes.string,
-    separation: PropTypes.string,
+    desc_separation: PropTypes.string,
     alignment: PropTypes.string,
     margin: PropTypes.string,
     padding: PropTypes.string
