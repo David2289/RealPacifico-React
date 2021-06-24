@@ -1,18 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Container, Col } from 'react-materialize';
-import { LABEL, SCREEN_MEDIA } from '../../../utils/constants.js';
-import Row from '../../organism/row.jsx';
-import Divider from '../../atoms/divider.jsx'
-import Card from '../../molecules/card.jsx';
-import Banner from '../../organism/banner.jsx';
-import Path from '../../molecules/path.jsx';
-import Contact from '../../organism/contact.jsx'
+import { LABEL, SCREEN_MEDIA } from '../../utils/constants.js';
+import Row from '../organism/row.jsx';
+import Divider from '../atoms/divider.jsx'
+import Card from '../molecules/card.jsx';
+import Banner from '../organism/banner.jsx';
+import Path from '../molecules/path.jsx';
+import Contact from '../organism/contact.jsx'
 
-import PathImg4 from '../../../images/img_4.jpg';
-import PathIcPhone from '../../../icons/ic_phone.svg';
-import PathIcGps from '../../../icons/ic_gps.svg';
-import PathIcMail from '../../../icons/ic_mail.svg';
+import PathImg4 from '../../images/img_4.jpg';
+import PathIcPhone from '../../icons/ic_phone.svg';
+import PathIcGps from '../../icons/ic_gps.svg';
+import PathIcMail from '../../icons/ic_mail.svg';
 
 const MapContent = styled.div`
     position: relative;

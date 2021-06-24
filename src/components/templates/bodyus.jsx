@@ -1,20 +1,20 @@
 import React from 'react';
-import Banner from '../../organism/banner.jsx';
+import Banner from '../organism/banner.jsx';
 import { Container, Row, Col } from 'react-materialize';
-import { COLOR, LABEL } from '../../../utils/constants.js';
-import Path from '../../molecules/path.jsx';
-import TitleSect from '../../atoms/titlesect.jsx';
-import RowInfo from '../../organism/rowinfo.jsx';
-import Card from '../../molecules/card.jsx';
-import Divider from '../../atoms/divider.jsx';
+import { COLOR, LABEL } from '../../utils/constants.js';
+import Path from '../molecules/path.jsx';
+import TitleSect from '../atoms/titlesect.jsx';
+import IconTexts from '../molecules/icon_texts.jsx';
+import RowInfo from '../organism/rowinfo.jsx';
+import Card from '../molecules/card.jsx';
+import Divider from '../atoms/divider.jsx';
 
-import PathImg4 from '../../../images/img_4.jpg';
-import PathImg15 from '../../../images/img_15.jpg';
+import PathImg4 from '../../images/img_4.jpg';
+import PathImg15 from '../../images/img_15.jpg';
 
-import PathIcAtom from '../../../icons/ic_atom.svg';
-import PathIcHeart from '../../../icons/ic_heart.svg';
-import PathIcStar from '../../../icons/ic_star.svg';
-import IconTexts from '../../molecules/icon_texts.jsx';
+import PathIcAtom from '../../icons/ic_atom.svg';
+import PathIcHeart from '../../icons/ic_heart.svg';
+import PathIcStar from '../../icons/ic_star.svg';
 
 
 const BodyUs = () => {

@@ -1,23 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Container, Col, Parallax } from 'react-materialize';
-import { COLOR, SIZE, SCREEN_MEDIA } from '../../../utils/constants.js';
-import Slider from '../../organism/slider.jsx';
-import Row from '../../organism/row.jsx';
-import RowInfo from '../../organism/rowinfo.jsx';
-import Divider from '../../atoms/divider.jsx';
-import TitleSect from '../../atoms/titlesect.jsx';
-import IconTexts from '../../molecules/icon_texts.jsx';
+import { COLOR, SIZE, SCREEN_MEDIA } from '../../utils/constants.js';
+import Slider from '../organism/slider.jsx';
+import Row from '../organism/row.jsx';
+import RowInfo from '../organism/rowinfo.jsx';
+import Divider from '../atoms/divider.jsx';
+import TitleSect from '../atoms/titlesect.jsx';
+import IconTexts from '../molecules/icon_texts.jsx';
 
-import PathIcHeart from '../../../icons/ic_heart.svg';
-import PathIcAtom from '../../../icons/ic_atom.svg';
-import PathIcInitial from '../../../icons/ic_edu_initial.svg';
-import PathIcNotebook from '../../../icons/ic_edu_notebook.svg';
-import PathIcGraduation from '../../../icons/ic_edu_graduation.svg';
+import PathIcHeart from '../../icons/ic_heart.svg';
+import PathIcAtom from '../../icons/ic_atom.svg';
+import PathIcInitial from '../../icons/ic_edu_initial.svg';
+import PathIcNotebook from '../../icons/ic_edu_notebook.svg';
+import PathIcGraduation from '../../icons/ic_edu_graduation.svg';
 
-const path_classroom_img = require('../../../images/img_6.jpg');
-const path_img_15 = require('../../../images/img_15.jpg');
-const path_img_13 = require('../../../images/img_13.jpg');
+const path_classroom_img = require('../../images/img_6.jpg');
+const path_img_15 = require('../../images/img_15.jpg');
+const path_img_13 = require('../../images/img_13.jpg');
 
 
 const ParallaxStyled = styled(Parallax)`
