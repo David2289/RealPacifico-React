@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Header from './components/organism/header/header.jsx';
-import Feet from './components/organism/footer/footer.jsx';
+import Header from './components/organism/header.jsx';
+import Feet from './components/organism/footer.jsx';
 import BodyIndex from './components/templates/bodyindex/bodyindex.jsx';
 import BodyUs from './components/templates/bodyus/bodyus.jsx';
 import BodyContact from './components/templates/bodycontact/bodycontact.jsx';

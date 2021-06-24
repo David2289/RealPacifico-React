@@ -2,11 +2,11 @@ import React from 'react';
 import 'materialize-css';
 import styled from 'styled-components';
 import { Navbar, NavItem } from 'react-materialize';
-import { LabelSailecMedium } from '../../atoms/label.jsx';
-import { COLOR, SIZE, SCREEN_MEDIA, LABEL } from '../../../utils/constants.js';
+import { LabelSailecMedium } from '../atoms/label.jsx';
+import { COLOR, SIZE, SCREEN_MEDIA, LABEL } from '../../utils/constants.js';
 
-import PathLogo from '../../../icons/ic_logo.svg';
-import PathBurger from '../../../icons/ic_burger.svg';
+import PathLogo from '../../icons/ic_logo.svg';
+import PathBurger from '../../icons/ic_burger.svg';
 
 
 const Logo = styled.img`

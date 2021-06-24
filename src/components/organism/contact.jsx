@@ -1,8 +1,8 @@
 import React from 'react';
-import TitleSect from '../../atoms/titlesect.jsx';
-import TextInput from '../../atoms/textinput.jsx';
-import TextArea from '../../atoms/textarea.jsx';
-import Button from '../../atoms/button.jsx';
+import TitleSect from '../atoms/titlesect.jsx';
+import TextInput from '../atoms/textinput.jsx';
+import TextArea from '../atoms/textarea.jsx';
+import Button from '../atoms/button.jsx';
 
 
 const Contact = () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import Banner from '../../organism/banner/banner.jsx';
+import Banner from '../../organism/banner.jsx';
 import { Container, Row, Col } from 'react-materialize';
 import { COLOR, LABEL } from '../../../utils/constants.js';
 import Path from '../../molecules/path.jsx';

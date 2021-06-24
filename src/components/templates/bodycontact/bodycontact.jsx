@@ -4,9 +4,9 @@ import { Container, Col } from 'react-materialize';
 import { LABEL } from '../../../utils/constants.js';
 import Row from '../../organism/row.jsx';
 import Card from '../../molecules/card.jsx';
-import Banner from '../../organism/banner/banner.jsx';
+import Banner from '../../organism/banner.jsx';
 import Path from '../../molecules/path.jsx';
-import Contact from '../../organism/contact/contact.jsx'
+import Contact from '../../organism/contact.jsx'
 
 import PathImg4 from '../../../images/img_4.jpg';
 import PathIcPhone from '../../../icons/ic_phone.svg';

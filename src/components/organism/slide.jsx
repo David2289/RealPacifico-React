@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { COLOR, SCREEN_MEDIA } from '../../../utils/constants.js';
-import { LabelHarmonyRegular, LabelHarmonyLite } from '../../atoms/label.jsx';
+import { COLOR, SCREEN_MEDIA } from '../../utils/constants.js';
+import { LabelHarmonyRegular, LabelHarmonyLite } from '../atoms/label.jsx';
 
 
 const SlideStyled = styled.div`

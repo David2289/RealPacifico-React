@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Parallax } from 'react-materialize';
-import { COLOR, SIZE, SCREEN_MEDIA } from '../../../utils/constants.js';
-import { LabelHarmonyRegular } from '../../atoms/label.jsx';
+import { COLOR, SIZE, SCREEN_MEDIA } from '../../utils/constants.js';
+import { LabelHarmonyRegular } from '../atoms/label.jsx';
 
 const ParallaxStyled = styled(Parallax)`
 width: 100%;

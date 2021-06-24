@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Container, Col, Parallax } from 'react-materialize';
 import { COLOR, SIZE, SCREEN_MEDIA } from '../../../utils/constants.js';
-import Slider from '../../organism/slider/slider.jsx';
+import Slider from '../../organism/slider.jsx';
 import Row from '../../organism/row.jsx';
 import RowInfo from '../../organism/rowinfo.jsx';
 import Divider from '../../atoms/divider.jsx';

@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { COLOR } from '../../../utils/constants.js';
+import { COLOR } from '../../utils/constants.js';
 import Slide from './slide.jsx';
 
-const path_slide1 = require('../../../images/img_1.jpg');
-const path_slide2 = require('../../../images/img_2.jpg');
-const path_slide3 = require('../../../images/img_3.jpg');
+const path_slide1 = require('../../images/img_1.jpg');
+const path_slide2 = require('../../images/img_2.jpg');
+const path_slide3 = require('../../images/img_3.jpg');
 
 
 const SliderContent = styled.div`
