@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Container, Col } from 'react-materialize';
-import { LABEL } from '../../../utils/constants.js';
+import { LABEL, SCREEN_MEDIA } from '../../../utils/constants.js';
 import Row from '../../organism/row.jsx';
+import Divider from '../../atoms/divider.jsx'
 import Card from '../../molecules/card.jsx';
 import Banner from '../../organism/banner.jsx';
 import Path from '../../molecules/path.jsx';
@@ -21,8 +22,17 @@ const MapContent = styled.div`
         width: 100%;
         height: 100%;
         border: none;
-        margin: 0px 0;
-      }
+    }
+    margin: 0px 0;
+    @media only screen and ${SCREEN_MEDIA.small} {
+        margin: 50px 0 0 0;
+    }
+    @media only screen and ${SCREEN_MEDIA.medium} {
+        margin: 50px 0 0 0;
+    }
+    @media only screen and ${SCREEN_MEDIA.long} {
+        margin: 50px 0 0 0;
+    }
 `;
 
 const BodyContact = () => {
@@ -39,7 +49,7 @@ const BodyContact = () => {
                         endpoint={LABEL.contact}
                         margin='20px 0' />
                 </Row>
-                <Row>
+                <Row className='valign-wrapper'>
                     <Col s={12} m={12} l={12} xl={6}>
                         <Contact/>
                     </Col>
@@ -51,6 +61,9 @@ const BodyContact = () => {
                         
                     </Col>
                 </Row>
+
+                <Divider/>
+
                 <Row>
                     <Col s={12} m={12} l={4} xl={4}>
                         <Card
