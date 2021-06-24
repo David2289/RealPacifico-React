@@ -45,8 +45,9 @@ function isNumeric(num) {
 const IconTexts = (props) => {
     
     const [state, setState] = useState(true);
-    const listDesc = props.descs?.map((desc) =>
+    const listDesc = props.descs?.map((desc, index) =>
             <Description
+                key={index}
                 desc_color={props.desc_color}
                 alignment={props.alignment}
                 desc_separation={props.desc_separation}>
