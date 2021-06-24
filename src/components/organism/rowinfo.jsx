@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Row, Col } from 'react-materialize';
-import { COLOR, SIZE, SCREEN_MEDIA } from '../../../utils/constants.js';
-import { LabelSailecBold } from '../../atoms/label.jsx';
-import Content from '../../atoms/content.jsx';
-import TitleSect from '../../atoms/titlesect.jsx';
-import Description from '../../atoms/description.jsx';
+import { COLOR, SIZE } from '../../utils/constants.js';
+import { LabelSailecBold } from '../atoms/label.jsx';
+import Content from '../atoms/content.jsx';
+import TitleSect from '../atoms/titlesect.jsx';
+import Description from '../atoms/description.jsx';
 
 // It doesn't work:
 const RowStyled = styled(Row)`

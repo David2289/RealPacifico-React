@@ -6,7 +6,7 @@ import { COLOR } from '../../utils/constants.js'
 const Content = styled.div`
     height: 2px;
     background-color: ${props => props.color ? props.color : COLOR.grayClear};
-    margin: ${props => props.margin ? props.margin : '80px 0'};
+    margin: ${props => props.margin ? props.margin : '100px 0'};
 `;
 
 const Divider = (props) => {

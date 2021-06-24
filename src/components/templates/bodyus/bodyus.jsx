@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-materialize';
 import { COLOR, LABEL } from '../../../utils/constants.js';
 import Path from '../../molecules/path.jsx';
 import TitleSect from '../../atoms/titlesect.jsx';
-import RowInfo from '../../organism/rowinfo/rowinfo.jsx';
+import RowInfo from '../../organism/rowinfo.jsx';
 import Card from '../../molecules/card.jsx';
 import Divider from '../../atoms/divider.jsx';
 
@@ -32,16 +32,20 @@ const BodyUs = () => {
                 </Row>
 
                 <RowInfo
-                        margin='40px 0'
-                        img_path={PathImg15}
-                        img_right={false}
-                        title='Historia'
-                        desc='Un estudiante egresa de la secundaria, postula a la universidad y no ingresa. Lo logra después de un año de preparación, como mínimo, en una academia preuniversitaria. Fue necesaria la creación de un gran colegio. El colegio Real Pacífico, con alto nivel de enseñanza y altas expectativas de rendimiento académico. Los alumnos egresan preparados para aprobar el examen e ingresar a la universidad.'
-                        subtitle1='Misión'
-                        desc1='Ser los responsables de dar una formación integral a cada uno de nuestros alumnos en las distintas etapas de su desarrollo.'
-                        subtitle2='Visión'
-                        desc2='Formar personas con alta calidad humana, con sólidos conocimientos académicos, con habilidades sociales y capaces de adaptarse a los cambios.'
-                        />
+                    margin='40px 0'
+                    img_path={PathImg15}
+                    img_right={false}
+                    title='Historia'
+                    desc='Un estudiante egresa de la secundaria, postula a la universidad y no ingresa. 
+                    Lo logra después de un año de preparación, como mínimo, en una academia preuniversitaria. 
+                    Fue necesaria la creación de un gran colegio. 
+                    El colegio Real Pacífico, con alto nivel de enseñanza y altas expectativas de rendimiento académico. 
+                    Los alumnos egresan preparados para aprobar el examen e ingresar a la universidad.'
+                    subtitle1='Misión'
+                    desc1='Ser los responsables de dar una formación integral a cada uno de nuestros alumnos en las distintas etapas de su desarrollo.'
+                    subtitle2='Visión'
+                    desc2='Formar personas con alta calidad humana, con sólidos conocimientos académicos, con habilidades sociales y capaces de adaptarse a los cambios.'
+                    />
 
                 <Divider/>
 

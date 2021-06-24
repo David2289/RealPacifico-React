@@ -1,9 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Container, Row, Col, Parallax } from 'react-materialize';
+import { Container, Col, Parallax } from 'react-materialize';
 import { COLOR, SIZE, SCREEN_MEDIA } from '../../../utils/constants.js';
 import Slider from '../../organism/slider/slider.jsx';
-import RowInfo from '../../organism/rowinfo/rowinfo.jsx';
+import Row from '../../organism/row.jsx';
+import RowInfo from '../../organism/rowinfo.jsx';
+import Divider from '../../atoms/divider.jsx';
 import TitleSect from '../../atoms/titlesect.jsx';
 import IconTexts from '../../molecules/icon_texts.jsx';
 
@@ -17,9 +19,6 @@ const path_classroom_img = require('../../../images/img_6.jpg');
 const path_img_15 = require('../../../images/img_15.jpg');
 const path_img_13 = require('../../../images/img_13.jpg');
 
-const RowStyled = styled(Row)`
-    margin: 80px 0; // default row margin
-`;
 
 const ParallaxStyled = styled(Parallax)`
     margin: 60px 0;
@@ -62,20 +61,23 @@ const BodyIndex = () => {
                 />
 
             <Container>
-                <RowStyled>
+                <Row>
                     <Col s={12} m={12} l={12} xl={12}>
                         <a href='https://www.youtube.com/watch?v=z3WamsCDth4&feature=youtu.be' target='_blank'>
                             <img className='responsive-img' src={path_classroom_img}/>
                         </a>
                     </Col>
-                </RowStyled>
+                </Row>
+
+                <Divider/>
 
                 <RowInfo
                     margin='80px 0'
                     img_path={path_img_15}
                     img_right={false}
                     title='Nosotros'
-                    desc='El colegio Real Pacífico, con alto nivel de enseñanza y altas expectativas de rendimiento académico. Nuestros alumnos egresan preparados para aprobar el examen e ingresar a la universidad.'
+                    desc='El colegio Real Pacífico, con alto nivel de enseñanza y altas expectativas de rendimiento académico. 
+                    Nuestros alumnos egresan preparados para aprobar el examen e ingresar a la universidad.'
                     />
             </Container>
 
@@ -84,10 +86,10 @@ const BodyIndex = () => {
                 options={{responsiveThreshold: 0}}
                 children={
                     <ParallaxBody>
-                        <RowStyled>
+                        <Row>
                             <TitleSect color={COLOR.white}>Nuestra Propuesta</TitleSect>
-                        </RowStyled>
-                        <RowStyled>
+                        </Row>
+                        <Row>
                             <Col s={12} m={6} l={3} xl={3}>
                                 <IconTexts 
                                     ic_path={PathIcInitial} 
@@ -136,13 +138,13 @@ const BodyIndex = () => {
                                     margin='30px 0px'>
                                 </IconTexts>
                             </Col>
-                        </RowStyled>
+                        </Row>
                     </ParallaxBody>
                 }
             />
 
             <Container>
-                <RowStyled>
+                <Row>
                     <Col s={12} m={12} l={6} xl={6}>
                         <IconTexts 
                             ic_path={PathIcAtom} 
@@ -165,7 +167,7 @@ const BodyIndex = () => {
                             alignment='center'
                             margin='30px 0px'/>
                     </Col>
-                </RowStyled>
+                </Row>
             </Container>
             
         </div>

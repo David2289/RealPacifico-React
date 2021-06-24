@@ -55,7 +55,7 @@ const BodyContact = () => {
                             ic_path={PathIcPhone}
                             title='Teléfonos'
                             title_separation='15px'
-                            descs={['043-310640', '952904890', '902308286']}
+                            descs={['952904890', '952904890', '902308286']}
                             alignment='center'
                             />
                     </Col>
