@@ -20,7 +20,8 @@ const SIZE = {
     subtitle: '18px',
     body: '16px',
     caption: '13px',
-    small: '11px'
+    small: '11px',
+    row_margin: '80px 0'
 }
 
 const SCREEN_MEDIA = {

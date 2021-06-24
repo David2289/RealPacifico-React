@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Container, Row, Col } from 'react-materialize';
+import { Container, Col } from 'react-materialize';
 import { LABEL } from '../../../utils/constants.js';
+import Row from '../../organism/row.jsx';
 import Card from '../../molecules/card.jsx';
 import Banner from '../../organism/banner/banner.jsx';
 import Path from '../../molecules/path.jsx';
@@ -32,7 +33,8 @@ const BodyContact = () => {
                 title={LABEL.contact}/>
 
             <Container>
-                <Row>
+                <Row
+                    margin='0 0'>
                     <Path 
                         endpoint={LABEL.contact}
                         margin='20px 0' />
