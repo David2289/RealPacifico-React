@@ -34,7 +34,8 @@ const SCREEN_MEDIA = {
 const LABEL = {
     initial: 'Inicio',
     us: 'Nosotros',
-    contact: 'Contacto'
+    contact: 'Contacto',
+    service: 'Servicios'
 }
 
 export {

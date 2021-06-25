@@ -49,14 +49,15 @@ const NavbarStyled = styled(Navbar)`
 
 const NavItemStyled = styled(NavItem)`
     color: ${COLOR.secondary};
-    background-color: ${props => props.selected ? COLOR.primaryDark : COLOR.primary};
+    background-color: ${props => props.selected ? '#f0bc11' : COLOR.primary};
 `;
 
 const Header = (props) => {
 
     var initial_selected = false;
     var us_selected = false;
-    var contact_selected= false;
+    var contact_selected = false;
+    var service_selected = false;
 
     switch (props.selected) {
         case LABEL.initial:
@@ -67,6 +68,9 @@ const Header = (props) => {
             break;
         case LABEL.contact:
             contact_selected= true;
+            break;
+        case LABEL.service:
+            service_selected= true;
             break;
     }
     
@@ -84,8 +88,10 @@ const Header = (props) => {
                 <LabelMediumBodySecondary>{LABEL.initial}</LabelMediumBodySecondary>
             </NavItemStyled>
 
-            <NavItemStyled>
-                <LabelMediumBodySecondary>Matrícula 2021</LabelMediumBodySecondary>
+            <NavItemStyled
+                href='/service'
+                selected={service_selected}>
+                <LabelMediumBodySecondary>{LABEL.service}</LabelMediumBodySecondary>
             </NavItemStyled>
 
             <NavItemStyled

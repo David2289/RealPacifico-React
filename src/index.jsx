@@ -6,6 +6,7 @@ import Feet from './components/organism/footer.jsx';
 import BodyIndex from './components/templates/bodyindex.jsx';
 import BodyUs from './components/templates/bodyus.jsx';
 import BodyContact from './components/templates/bodycontact.jsx';
+import BodyService from './components/templates/bodyservice.jsx';
 import { Root } from './utils/global.js';
 import { LABEL } from './utils/constants.js';
 import { 
@@ -45,6 +46,12 @@ const elements = (
                     path='/contact'>
                     <Header selected={LABEL.contact}/>
                     <BodyContact/>
+                </Route>
+
+                <Route 
+                    path='/service'>
+                    <Header selected={LABEL.service}/>
+                    <BodyService/>
                 </Route>
 
             </Switch>
