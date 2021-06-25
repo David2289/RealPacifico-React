@@ -7,6 +7,7 @@ import BodyIndex from './components/templates/bodyindex.jsx';
 import BodyUs from './components/templates/bodyus.jsx';
 import BodyContact from './components/templates/bodycontact.jsx';
 import { Root } from './utils/global.js';
+import { LABEL } from './utils/constants.js';
 import { 
     FontSailecRegular, 
     FontSailecMedium, 
@@ -25,20 +26,30 @@ const elements = (
         <FontHarmonyRegular/>
         <FontHarmonyLite/>
         
-        <Header/>
         <Router>
             <Switch>
-                <Route exact path='/'>
+
+                <Route 
+                    exact path='/'>
+                    <Header selected={LABEL.initial}/>
                     <BodyIndex/>
                 </Route>
-                <Route path='/nosotros'>
+
+                <Route 
+                    path='/nosotros'>
+                    <Header selected={LABEL.us}/>
                     <BodyUs/>
                 </Route>
-                <Route path='/contact'>
+
+                <Route 
+                    path='/contact'>
+                    <Header selected={LABEL.contact}/>
                     <BodyContact/>
                 </Route>
+
             </Switch>
         </Router>
+
         <Feet/>
     </div>
 );

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import 'materialize-css';
 import styled from 'styled-components';
 import { Navbar, NavItem } from 'react-materialize';
@@ -27,10 +28,6 @@ const LabelMediumBodySecondary = styled(LabelSailecMedium)`
     color: ${COLOR.secondary};
 `;
 
-const NavItemStyled = styled(NavItem)`
-    color: ${COLOR.secondary};
-`;
-
 const NavbarStyled = styled(Navbar)`
     @media only screen and ${SCREEN_MEDIA.small} {
         padding: 0 0px;
@@ -50,8 +47,31 @@ const NavbarStyled = styled(Navbar)`
     }
 `;
 
-const Header = () => (
-    <div>
+const NavItemStyled = styled(NavItem)`
+    color: ${COLOR.secondary};
+    background-color: ${props => props.selected ? COLOR.primaryDark : COLOR.primary};
+`;
+
+const Header = (props) => {
+
+    var initial_selected = false;
+    var us_selected = false;
+    var contact_selected= false;
+
+    switch (props.selected) {
+        case LABEL.initial:
+            initial_selected = true;
+            break;
+        case LABEL.us:
+            us_selected = true;
+            break;
+        case LABEL.contact:
+            contact_selected= true;
+            break;
+    }
+    
+
+    return (
         <NavbarStyled 
             alignLinks='right'
             brand={logo_dom}
@@ -59,7 +79,8 @@ const Header = () => (
             menuIcon={burger_dom}>
 
             <NavItemStyled
-                href='/'>
+                href='/'
+                selected={initial_selected}>
                 <LabelMediumBodySecondary>{LABEL.initial}</LabelMediumBodySecondary>
             </NavItemStyled>
 
@@ -68,7 +89,8 @@ const Header = () => (
             </NavItemStyled>
 
             <NavItemStyled
-                href='/nosotros'>
+                href='/nosotros'
+                selected={us_selected}>
                 <LabelMediumBodySecondary>{LABEL.us}</LabelMediumBodySecondary>
             </NavItemStyled>
 
@@ -77,13 +99,18 @@ const Header = () => (
             </NavItemStyled>
 
             <NavItemStyled
-                href='/contact'>
+                href='/contact'
+                selected={contact_selected}>
                 <LabelMediumBodySecondary>{LABEL.contact}</LabelMediumBodySecondary>
             </NavItemStyled>
 
         </NavbarStyled>
-    </div>
+    );
     
-);
+}
+
+Header.propTypes = {
+    selected: PropTypes.string
+}
 
 export default Header;
