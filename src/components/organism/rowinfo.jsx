@@ -4,11 +4,14 @@ import styled from 'styled-components';
 import { Col } from 'react-materialize';
 import { COLOR, SIZE } from '../../utils/constants.js';
 import { LabelSailecBold } from '../atoms/label.jsx';
-import Content from '../atoms/content.jsx';
 import Row from './row.jsx';
 import TitleSect from '../atoms/titlesect.jsx';
 import Description from '../atoms/description.jsx';
 
+
+const Content = styled.div`
+    margin: 30px 0 0 25px;
+`;
 
 const Subtitle = styled(LabelSailecBold)`
     font-size: ${SIZE.title};
@@ -20,7 +23,7 @@ const RowInfo = (props) => {
         return (
             <Row className='valign-wrapper' margin={props.margin} padding={props.padding}>
                 <Col s={12} m={6}>
-                    <Content margin='30px 0 0 25px'>
+                    <Content>
                         <TitleSect>{props.title}</TitleSect>
                         <Description margin='30px 0px'>
                             {props.desc}
@@ -53,7 +56,7 @@ const RowInfo = (props) => {
                     <img className='responsive-img' src={props.img_path}/>
                 </Col>
                 <Col s={12} m={6}>
-                    <Content margin='30px 0 0 25px'>
+                    <Content>
                         <TitleSect>{props.title}</TitleSect>
                         <Description margin='30px 0px'>
                             {props.desc}
