@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Footer } from 'react-materialize';
+import { Footer as Feet } from 'react-materialize';
 import { COLOR } from '../../utils/constants.js';
 import TextButton from '../atoms/textbutton.jsx';
 import SVG from 'react-inlinesvg';
@@ -79,7 +79,7 @@ const links =
 </List>;
 
 
-const FooterStyled = styled(Footer)`
+const FeetStyled = styled(Feet)`
     margin: 100px 0 0 0;
     background-image: url(${path_bg});
     // Cover and center background image: //
@@ -112,14 +112,14 @@ const Logo = styled(SVG)`
     height: 150px;
 `;
 
-const Feet = () => (
-    <FooterStyled
+const Footer = () => (
+    <FeetStyled
         copyrights={copyright_label}
         links={links} >
         <LogoContent className='valign-wrapper'>
             <Logo src={PathLogo} />
         </LogoContent>
-    </FooterStyled>
+    </FeetStyled>
 );
 
-export default Feet;
+export default Footer;
