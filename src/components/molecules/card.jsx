@@ -23,7 +23,7 @@ const Card = (props) => {
         <Containter>
             <IconTexts
                 ic_path={props.ic_path}
-                ic_color={COLOR.primaryDark}
+                ic_color={COLOR.gold}
                 ic_height='25px'
                 title={props.title}
                 title_size={SIZE.subtitle}

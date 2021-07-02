@@ -1,9 +1,10 @@
 
 const COLOR = {
     primary: '#FFCA18',
-    primaryDark: '#C99B02',
+    primaryDark: '#F0BC11',
     primaryClear: '#FFEEB5',
-    secondary: ' #101439',
+    gold: '#C99B02',
+    secondary: '#101439',
     secondaryClear: '#7278A8',
     background: '#FFFFF6',
     white: '#FFFFFF',

@@ -49,7 +49,7 @@ const NavbarStyled = styled(Navbar)`
 
 const NavItemStyled = styled(NavItem)`
     color: ${COLOR.secondary};
-    background-color: ${props => props.selected ? '#f0bc11' : COLOR.primary};
+    background-color: ${props => props.selected ? COLOR.primaryDark : COLOR.primary};
 `;
 
 const Header = (props) => {
