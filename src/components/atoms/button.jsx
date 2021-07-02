@@ -5,7 +5,7 @@ import { Button as MatButton } from 'react-materialize';
 import { COLOR } from '../../utils/constants.js'
 
 const ButtonStyled = styled(MatButton)`
-    color: ${COLOR.grayDark};
+    color: ${COLOR.black};
     background-color: ${COLOR.primary};
     text-transform: none;
     margin: ${props => props.margin ? props.margin : '0 0'};
