@@ -3,10 +3,9 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Col } from 'react-materialize';
 import { COLOR, SIZE } from '../../utils/constants.js';
-import { LabelSailecBold } from '../atoms/label.jsx';
+import { LabelSailecBold, LabelSailecRegular } from '../atoms/label.jsx';
 import Row from './row.jsx';
 import TitleSect from '../atoms/titlesect.jsx';
-import Description from '../atoms/description.jsx';
 
 
 const Content = styled.div`
@@ -16,6 +15,12 @@ const Content = styled.div`
 const Subtitle = styled(LabelSailecBold)`
     font-size: ${SIZE.title};
     color: ${COLOR.gray};
+`;
+
+const Description = styled(LabelSailecRegular)`
+    margin: ${props => props.margin ? props.margin : '0 0'};
+    color: ${COLOR.gray};
+    font-size: ${SIZE.body};
 `;
 
 const RowInfo = (props) => {
