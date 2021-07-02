@@ -26,6 +26,7 @@ const copyright_label = "Copyright \xA9" + current_year.toString() + " Todos los
 const List = styled.ul`
     li {
         margin-bottom: 20px;
+        display: flex; // To avoid purple padding on <a> tag
     }
 `;
 
