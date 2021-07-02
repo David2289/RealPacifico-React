@@ -15,7 +15,7 @@ import {
     FontSailecBold, 
     FontSailecLight, 
     FontHarmonyRegular, 
-    FontHarmonyLite } from './fonts/fonts.js';
+    FontHarmonyLite } from './utils/fonts.js';
 
 const elements = (
     <div>
