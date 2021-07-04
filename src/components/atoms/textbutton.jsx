@@ -7,7 +7,7 @@ import { LabelSailecRegular } from '../atoms/label.jsx'
 
 
 const AContent = styled.a`
-    // To avoid purple padding: Its
+    // To avoid purple padding it's necesary display flex in the content.
     display: flex;
     float: ${props => props.float ? props.float : 'left'};
 `;
