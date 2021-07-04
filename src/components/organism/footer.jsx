@@ -6,6 +6,8 @@ import TextButton from '../atoms/textbutton.jsx';
 import SVG from 'react-inlinesvg';
 
 import PathLogo from '../../icons/ic_logo.svg';
+import PathLandline from '../../icons/ic_landline.svg';
+import PathMobile from '../../icons/ic_mobile.svg';
 
 
 const path_bg = require('../../images/img_5.jpg');
@@ -16,8 +18,6 @@ const url_insta = "https://www.instagram.com/colegiorealpacifico/";
 const path_wapp = require('../../icons/ic_wapp.svg');
 const path_fb = require('../../icons/ic_fb.svg');
 const path_insta = require('../../icons/ic_insta.svg');
-const path_landline = require('../../icons/ic_landline.svg');
-const path_mobile = require('../../icons/ic_mobile.svg');
 
 const current_year = new Date().getFullYear();
 const copyright_label = "Copyright \xA9" + current_year.toString() + " Todos los derechos reservados";
@@ -63,7 +63,8 @@ const links =
         <TextButton 
             href="#"
             target="_blank"
-            ic_path={path_landline}
+            ic_path={PathLandline}
+            ic_color={COLOR.white}
             title_color={COLOR.white}>
                 43-310620
         </TextButton>
@@ -72,7 +73,8 @@ const links =
         <TextButton 
             href="#"
             target="_blank"
-            ic_path={path_mobile}
+            ic_path={PathMobile}
+            ic_color={COLOR.white}
             title_color={COLOR.white}>
                 947670628
         </TextButton>
