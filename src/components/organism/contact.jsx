@@ -22,14 +22,17 @@ const Contact = () => {
                 Escríbenos
             </TitleSect>
             <TextInput 
+                id='name'
                 type='text' 
                 placeholder='Nombre'
                 margin='40px 0 20px 0'/>
             <TextInput 
+                id='email'
                 type='email' 
                 placeholder='Email'
                 margin='20px 0'/>
             <TextArea 
+                id='message'
                 placeholder='Mensaje'
                 margin='20px 0'/>
             <Button
