@@ -22,7 +22,8 @@ const SIZE = {
     body: '16px',
     caption: '13px',
     small: '11px',
-    row_margin: '80px 0'
+    row_margin: '80px 0',
+    inp_radious: '3px' // Input border radious
 }
 
 const SCREEN_MEDIA = {
