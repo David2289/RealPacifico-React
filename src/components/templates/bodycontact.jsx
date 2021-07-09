@@ -58,7 +58,6 @@ const BodyContact = () => {
                             <iframe src="https://maps.google.com/maps?q=Avenida%20pac%C3%ADfico%20578%2C%20Nuevo%20Chimbote%2C%20Per%C3%BA&t=&z=15&ie=UTF8&iwloc=&output=embed"
                                 allowFullScreen/>
                         </MapContent>
-                        
                     </Col>
                 </Row>
 

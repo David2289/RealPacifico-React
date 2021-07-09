@@ -24,19 +24,7 @@ const Root = createGlobalStyle`
     // ******  BUTTONS  ******
 
     .btn, .btn-large {
-        color: ${COLOR.black};
-        background-color: ${COLOR.primary};
-        border: none;
         text-transform: none;
-        &:hover {
-            color: ${COLOR.white};
-            background-color: ${COLOR.primaryDark};
-            svg { fill: ${COLOR.white}; }
-        }
-        &:focus {
-            color: ${COLOR.white};
-            background-color: ${COLOR.primaryDark};
-        }
     }
     .modal.open {
         .modal-footer {
@@ -100,7 +88,12 @@ const Root = createGlobalStyle`
     .datepicker-done,
     .datepicker-cancel,
     .select-dropdown li>span,
-    .is-today {
+    .datepicker-row {
+        .is-today {
+            color: ${COLOR.gold} !important
+        }
+    }
+    .btn-flat.datepicker-cancel.waves-effect, .btn-flat.datepicker-done.waves-effect {
         color: ${COLOR.gold} !important
     }
     td.is-selected,

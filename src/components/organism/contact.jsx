@@ -4,8 +4,10 @@ import TitleSect from '../atoms/titlesect.jsx';
 import TextInput from '../atoms/textinput.jsx';
 import TextArea from '../atoms/textarea.jsx';
 import Button from '../atoms/button.jsx';
+import { COLOR } from '../../utils/constants.js';
 
 const Containter = styled.div`
+    overflow: auto; // To cover height with contents
     padding: 30px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.02), 
                 0 2px 4px rgba(0,0,0,0.02), 
@@ -36,7 +38,8 @@ const Contact = () => {
                 placeholder='Mensaje'
                 margin='20px 0'/>
             <Button
-                type='submit'>
+                type='submit'
+                bg_color={COLOR.primary}>
                 Enviar
             </Button>
         </Containter>
