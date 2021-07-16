@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from '../organism/banner.jsx';
-import { Container, Row, Col } from 'react-materialize';
+import { Container, Col } from 'react-materialize';
+import Row from '../organism/row.jsx';
 import { COLOR, LABEL } from '../../utils/constants.js';
 import Path from '../molecules/path.jsx';
 import TitleSect from '../atoms/titlesect.jsx';
@@ -49,8 +50,11 @@ const BodyUs = () => {
 
                 <Divider/>
 
-                <Row>
+                <Row margin='80px 0 30px 0'>
                     <TitleSect>Valores</TitleSect>
+                </Row>
+
+                <Row margin='30px 0 80px 0'>
                     <Col s={12} m={6} l={4} xl={4}>
                         <Card
                             ic_path={PathIcHeart}

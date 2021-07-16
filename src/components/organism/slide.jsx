@@ -33,11 +33,9 @@ const SlideStyled = styled.div`
 
 const Title = styled(LabelHarmonyRegular)`
     width: 78%;
-    font-size: 125px;
-    position: absolute;
+    font-size: 55px;
     top: 15%;
 	left: 7%;
-    color: ${COLOR.white};
     @media only screen and ${SCREEN_MEDIA.small} {
         width: 78%;
         font-size: 25px;
@@ -59,10 +57,8 @@ const Title = styled(LabelHarmonyRegular)`
 const Description = styled(LabelHarmonyLite)`
     width: 60%;
     font-size: 35px;
-    position: absolute;
     top: 45%;
     right: 10%;
-    color: ${COLOR.white};
     @media only screen and ${SCREEN_MEDIA.small} {
         width: 78%;
         right: 5%;
@@ -88,8 +84,16 @@ const Description = styled(LabelHarmonyLite)`
 const Slide = (props) => {
     return (
         <SlideStyled id='slide' background={props.bg_path}>
-            <Title>{props.title}</Title>
-            <Description>{props.description}</Description>
+            <Title
+                text_color={COLOR.white}
+                position='absolute'>
+                {props.title}
+            </Title>
+            <Description
+                text_color={COLOR.white}
+                position='absolute'>
+                {props.description}
+            </Description>
         </SlideStyled>
     );
 }
